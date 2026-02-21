@@ -1,0 +1,439 @@
+  Please Create comprehensive documentations for both future developers and users. Assume they have          no or very little technical experience wrt to the technologies used in this project.
+  Make sure that there are detailed documentations for both future developers and users                       so that they can get up to speed and carry on with future feature development and                           testing WITHOUT ANY EXTERNAL HELP. Many developers and users may have traditional C, C++, Java              experience but they are new to full-stack or web app developments. The documentations must be
+  step-by-step hand-holding
+   kind of documentations without missing any single step. They must also provide both
+  the big pictures and also low-level details without the developers and users to look elsewhere
+   for help or feeling helpless and giving up.
+  Create a self-contained comprehensive document about the architecture of
+  the application. Include diagrams showing the architecture design at different
+  abstraction levels. Include diagrams showing their communication flows.
+  Refer to files and code snippets for the implementation of the key components.
+  Include communication flow diagrams at various abstraction levels and between
+  different sub-groups of components. Draw all diagrams as ascii diagrams. No mermaid code.
+  Create also a quick start guide for users. Include at least ten simple but meaningful and educational
+   use
+   cases to showcase the features of this application. The idea is to give the novice users some quick
+  wins
+   so that they are engaged and motivated to return to this application and explore the more advanced
+  features. There should NO TECNICAL DEBTS for future developers and users to bear.
+  Create README.md, CLAUDE.md also.
+   Please in USER_GUIDE document, explain clearly what steps user can run codes from this repo on
+  Windows. It is not expected compiling C++ codes a smooth run on Windows. What are user options ?
+
+✶ Marinating…
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────
+> 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle) · esc to interrupt
+
+
+
+
+crashed again
+
+
+  Please Create comprehensive documentations for both future developers and users. Assume they have          no or very little technical experience wrt to the technologies used in this project.
+  Make sure that there are detailed documentations for both future developers and users                       so that they can get up to speed and carry on with future feature development and                           testing WITHOUT ANY EXTERNAL HELP. Many developers and users may have traditional C, C++, Java              experience but they are new to full-stack or web app developments. The documentations must be
+  step-by-step hand-holding
+   kind of documentations without missing any single step. They must also provide both
+  the big pictures and also low-level details without the developers and users to look elsewhere
+   for help or feeling helpless and giving up.
+  Create a self-contained comprehensive document about the architecture of
+  the application. Include diagrams showing the architecture design at different
+  abstraction levels. Include diagrams showing their communication flows.
+  Refer to files and code snippets for the implementation of the key components.
+  Include communication flow diagrams at various abstraction levels and between
+  different sub-groups of components. Draw all diagrams as ascii diagrams. No mermaid code.
+  Create also a quick start guide for users. Include at least ten simple but meaningful and educational
+   use
+   cases to showcase the features of this application. The idea is to give the novice users some quick
+  wins
+   so that they are engaged and motivated to return to this application and explore the more advanced
+  features. There should NO TECNICAL DEBTS for future developers and users to bear.
+  Create README.md, CLAUDE.md also.
+   Please in USER_GUIDE document, explain clearly what steps user can run codes from this repo on
+  Windows. It is not expected compiling C++ codes a smooth run on Windows. What are user options ?
+
+● I'll create comprehensive documentation for this project. Let me first gather the additional information
+  needed, then write all documents in parallel.
+                                                                                                            ● 2 Explore agents finished (ctrl+o to expand)
+   ├─ Explore Python examples and user-facing API · 38 tool uses · 120.9k tokens                               │  ⎿  Done                                                                                                  └─ Explore C++ architecture and build details · 26 tool uses · 103.0k tokens
+      ⎿  Done
+
+● I now have all the information needed. Let me create all the documentation files in parallel.                                                                                                                         ● Running 4 builder agents… (ctrl+o to expand)                                                                 ├─ Write ARCHITECTURE.md documentation · 26 tool uses · 61.7k tokens                                        │  ⎿  Searching for 4 patterns, reading 22 files…                                                           ├─ Write DEVELOPER_GUIDE.md documentation · 13 tool uses · 34.6k tokens                                     │  ⎿  Searching for 1 pattern, reading 12 files…
+   ├─ Write USER_GUIDE.md documentation · 4 tool uses · 12.7k tokens
+   │  ⎿  Searching for 1 pattern, reading 3 files…                                                             └─ Write updated README.md · 1 tool use · 8.6k tokens                                                          ⎿  Read: README.md                                                                                         ctrl+b to run in background                                                                            
+✢ Marinating… (6m 11s · ↓ 24.0k tokens · thought for 5s)                                                    
+────────────────────────────────────────────────────────────────────────────────────────────────────────────
+> 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on (shift+tab to cycle) · esc to interrupt
+============================================================
+Bun v1.3.10 (1423d3c8) Windows x64 (baseline)
+Windows v.win11_dt
+CPU: sse42 avx avx2
+Args: "C:\Users\simon\.local\bin\claude.exe" "--permission-mode" "bypassPermissions" "--chrome"
+Features: Bun.stderr Bun.stdin(2) Bun.stdout(3) abort_signal(133) fetch(852) jsc spawn(122) standalone_executable process_dlopen yaml_parse(80)
+Builtins: "bun:main" "node:assert" "node:async_hooks" "node:buffer" "node:child_process" "node:constants" "node:crypto" "node:events" "node:fs" "node:fs/promises" "node:http" "node:https" "node:module" "node:net" "node:os" "node:path" "node:path/posix" "node:path/win32" "node:perf_hooks" "node:process" "node:stream" "node:timers/promises" "node:tls" "node:tty" "node:url" "node:util" "node:zlib" "node:worker_threads" "undici" "ws"
+Elapsed: 3670985ms | User: 297593ms | Sys: 52203ms
+RSS: 0.98GB | Peak: 1.05GB | Commit: 1.80GB | Faults: 4294856 | Machine: 34.01GB
+
+panic(main thread): switch on corrupt value
+oh no: Bun has crashed. This indicates a bug in Bun, not your code.
+
+To send a redacted crash report to Bun's team,
+please file a GitHub issue using the link below:
+
+ https://bun.report/1.3.10/e_11423d3cmgkgEuhogC0w3jQk8vtbi+p4Vw7r0U23wN+o5gUmznlOqn4kOwkkqvDCYKERNEL32.DLLut0LCSntdll.dll4gijBA0eNorLs8sSc5QyM9TSM4vKiotKFEoS8wpTQUAa8EI/A
+
+
+simon@Simon_laptop MINGW64 ~/Downloads/meep-master
+$
+
+
+
+restart
+
+
+
+
+   |
+   ▟█▙     Claude Code v2.1.50
+ ▐▛███▜▌   Opus 4.6 · Claude Max
+▝▜█████▛▘  ~\Downloads\meep-master
+  ▘▘ ▝▝
+
+> /init
+
+● I'll analyze the codebase to create a comprehensive CLAUDE.md. Let me explore the repository structure and
+   key files in parallel.
+
+● Read 4 files (ctrl+o to expand)
+
+● Explore(Explore meep codebase structure)
+  ⎿  Done (66 tool uses · 86.6k tokens · 35m 11s)
+  (ctrl+o to expand)
+
+● Sorry about the wait — the exploration agent was being very thorough with this large codebase. I now have
+  all the information I need. Let me also quickly check the GitHub Actions workflows and the pre-commit
+  config, then write the CLAUDE.md.
+
+● Read 7 files (ctrl+o to expand)
+
+● Now I have everything I need. Let me write the CLAUDE.md file.
+
+● Write(CLAUDE.md)
+  ⎿  Wrote 122 lines to ..\..\..\..\c\Users\simon\Downloads\meep-master\CLAUDE.md
+      1 # CLAUDE.md
+      2
+      3 This file provides guidance to Claude Code (claude.ai/code) when working with code in this re
+        pository.
+      4
+      5 ## Project Overview
+      6
+      7 Meep (MIT Electromagnetic Equation Propagation) is an open-source FDTD (finite-difference tim
+        e-domain) electromagnetics simulation engine. It provides C++ core library with Python (via S
+        WIG) and Scheme (via libctl/Guile) interfaces. The project lives at https://github.com/NanoCo
+        mp/meep.
+      8
+      9 ## Build System
+     … +112 lines (ctrl+o to expand)
+
+● Done. I've created CLAUDE.md at the repo root. It covers:
+
+  - Build system — Autotools commands for configure, build, and common variants (MPI, debug,
+  single-precision)
+  - Testing — How to run C++ tests (make check), Python tests, and individual tests; notes on MPI-excluded
+  tests
+  - C++ core architecture — The FDTD stepping pipeline, domain decomposition, key files and what they
+  contain
+  - Python interface — SWIG binding chain, high-level modules (simulation, geometry, sources, adjoint
+  solver)
+  - MPB/libpympb — Eigenmode solver integration
+  - Code style — clang-format config, Black/flake8 for Python, pre-commit hooks
+  - CI setup — GitHub Actions matrix
+  - Key conventions — maintainer mode, auto-generated files, shared library versioning
+
+  The file is concise (~120 lines) and focuses on non-obvious architectural knowledge that requires reading
+  multiple files to piece together.
+
+✻ Brewed for 38m 59s
+
+● Background command "List src directory contents" completed (exit code 0)
+
+● That's just a leftover notification from the exploration agent that already finished — nothing to worry
+  about. The CLAUDE.md file is complete and ready to use.
+
+● Background command "List doc directory" completed (exit code 0)
+
+● Another leftover background task notification from the earlier exploration — no action needed. The
+  CLAUDE.md is already complete.
+
+● Background command "List src/meep directory" completed (exit code 0)
+
+● Just another background task finishing from the earlier codebase exploration. Everything is already done —
+   the CLAUDE.md file is in place.
+
+● Background command "List contrib directory" completed (exit code 0)
+
+● Same as before — just a straggling background task from the exploration. Nothing to do here, CLAUDE.md is
+  all set.
+
+● Background command "List workflows directory" completed (exit code 0)
+
+● Last of the background tasks finishing up. All done — nothing further needed.
+
+● Background command "Get the doc directory listing" completed (exit code 0)
+
+● Another background task wrapping up. All good — CLAUDE.md is complete and ready.
+
+● Background command "Get doc listing" completed (exit code 0)
+
+● Just another background cleanup notification. Everything is finished.
+
+● Background command "Get workflows listing" completed (exit code 0)
+
+● Background task notification — nothing to act on. CLAUDE.md is done.
+
+● Background command "Get contrib listing" completed (exit code 0)
+
+● Background task done. Nothing needed — CLAUDE.md is complete.
+
+● Background command "Get src/meep listing" completed (exit code 0)
+
+● Last background task done. All clear — the CLAUDE.md is ready to go. Is there anything else you'd like me
+  to do with this codebase?
+
+● Background command "Collect all background outputs" completed (exit code 0)
+
+● That should be the last one. All background tasks from the exploration are finished. Let me know if you
+  need anything else!
+
+● Background command "Get all collected outputs" completed (exit code 0)
+
+● All background tasks are now fully complete. CLAUDE.md is done and ready. Let me know if you need anything
+   else!
+
+● Background command "Find files in doc directory" completed (exit code 0)
+
+● Done. All background tasks have completed. Ready for whatever's next!
+
+● Background command "Find files in src/meep directory" completed (exit code 0)
+
+● All done. Anything else you need?
+
+● Background command "Find files in contrib directory" completed (exit code 0)
+
+● All clear. Ready when you are!
+
+● Background command "Find files in workflows directory" completed (exit code 0)
+
+● All done!
+
+● Background command "Find all classes and structs in meep.hpp" completed (exit code 0)
+
+● Got it. Everything's wrapped up!
+
+● Background command "Get class/struct list" completed (exit code 0)
+
+● All background tasks finished. Let me know if there's anything else you'd like to do!
+
+● Background command "Get class/struct list" completed (exit code 0)
+
+● All done!
+
+● Background command "Get class/struct list" completed (exit code 0)
+
+● All background tasks complete. Ready for your next request!
+
+● Background command "List Python test files" completed (exit code 0)
+
+● Done!
+
+● Background command "List all Python files" completed (exit code 0)
+
+● All clear!
+
+● Background command "Get Python files list" completed (exit code 0)
+
+● Done! I think that should be the last of the background tasks from the exploration. Let me know if you
+  need anything else!
+
+● Background command "Get test files list" completed (exit code 0)
+
+● All done!
+
+>  Please Create comprehensive documentations for both future developers and users. Assume they have
+  no or very little technical experience wrt to the technologies used in this project.
+  Make sure that there are detailed documentations for both future developers and users
+  so that they can get up to speed and carry on with future feature development and
+  testing WITHOUT ANY EXTERNAL HELP. Many developers and users may have traditional C, C++, Java
+  experience but they are new to full-stack or web app developments. The documentations must be
+  step-by-step hand-holding
+   kind of documentations without missing any single step. They must also provide both
+  the big pictures and also low-level details without the developers and users to look elsewhere
+   for help or feeling helpless and giving up.
+  Create a self-contained comprehensive document about the architecture of
+  the application. Include diagrams showing the architecture design at different
+  abstraction levels. Include diagrams showing their communication flows.
+  Refer to files and code snippets for the implementation of the key components.
+  Include communication flow diagrams at various abstraction levels and between
+  different sub-groups of components. Draw all diagrams as ascii diagrams. No mermaid code.
+  Create also a quick start guide for users. Include at least ten simple but meaningful and educational
+   use
+   cases to showcase the features of this application. The idea is to give the novice users some quick
+  wins
+   so that they are engaged and motivated to return to this application and explore the more advanced
+  features. There should NO TECNICAL DEBTS for future developers and users to bear.
+  Create README.md, CLAUDE.md also.
+   Please in USER_GUIDE document, explain clearly what steps user can run codes from this repo on
+  Windows. It is not expected compiling C++ codes a smooth run on Windows. What are user options ?
+
+● I'll create comprehensive documentation for this project. Let me first gather the additional information
+  needed, then write all documents in parallel.
+
+● Explore(Explore Python examples and user-facing API)
+  ⎿  Done (38 tool uses · 133.0k tokens · 3m 7s)
+  (ctrl+o to expand)
+
+● I now have all the information needed. Let me create all the documentation files in parallel.
+
+> are you writing the documentations ? did you stop ?                                                       
+● You're right, I apologize for the delay. Let me write all the documentation files now. I'll create them in   parallel using multiple agents.
+                                                                                                            ● Bash(mkdir -p /c/Users/simon/Downloads/meep-master/docs)
+  ⎿  Done                                                                                                   
+● 2 builder agents launched (ctrl+o to expand)
+   ├─ Write ARCHITECTURE.md documentation
+   │  ⎿  Running in the background (↓ to manage)                                                               └─ Write DEVELOPER_GUIDE.md documentation                                                                      ⎿  Running in the background (↓ to manage)                                                                                                                                                                        ● All 4 documentation agents are running in parallel:
+                                                                                                              1. ARCHITECTURE.md - Making good progress (researching codebase and writing)                                2. DEVELOPER_GUIDE.md - In progress (building out step-by-step instructions)
+  3. USER_GUIDE.md - Starting (beginning the user tutorials)                                                  4. README.md - Starting
+
+  Meanwhile, let me update the CLAUDE.md to reference the new documentation while the agents work.
+
+● Read 1 file (ctrl+o to expand)
+
+● Update(CLAUDE.md)                                                                                           ⎿  Added 7 lines
+      120  - `RUNCODE` variable in Makefiles prepends `mpirun -np 2` for MPI builds and `env OMP_NUM_                  THREADS=2` for OpenMP.                                                                                 121  - Shared library versioning tracked via `SHARED_VERSION_INFO` in `configure.ac` (currently                   `36:0:1`). Any `.hpp` change generally breaks binary compatibility.
+      122  - The `step_generic_stride1.cpp` file is auto-generated from `step_generic.cpp` via sed tr
+           ansforms — do not edit directly.
+      123 +
+      124 +## Documentation
+      125 +
+      126 +- `docs/ARCHITECTURE.md` — System architecture with ASCII diagrams, data flows, and code r
+          +eferences
+      127 +- `docs/DEVELOPER_GUIDE.md` — Step-by-step build, test, and contribution guide for new dev
+          +elopers
+      128 +- `docs/USER_GUIDE.md` — Installation (including Windows), tutorials, and 10 educational u
+          +se cases
+      129 +- [Online Manual](https://meep.readthedocs.io/en/latest) — Full reference documentation
+
+● Good, CLAUDE.md is updated with documentation links. All 4 agents are still working on their respective
+  documents. Let me check on their progress.
+                                                                                                            ● Task Output(non-blocking) a66d900cd04ead37d
+  ⎿  Task is still running…
+
+● Task Output(non-blocking) a5e57918fee3660c0
+  ⎿  Task is still running…
+
+● All 4 agents are actively working - they're reading source files and writing the documentation. Here's the   status:
+
+  ┌─────────────────────────┬─────────┬──────────────────────────────────────────────────────────┐
+  │        Document         │  Agent  │                          Status                          │            ├─────────────────────────┼─────────┼──────────────────────────────────────────────────────────┤
+  │ docs/ARCHITECTURE.md    │ Agent 1 │ Reading source files (meep.hpp, materials, geom, source) │
+  ├─────────────────────────┼─────────┼──────────────────────────────────────────────────────────┤
+  │ docs/DEVELOPER_GUIDE.md │ Agent 2 │ In progress                                              │
+  ├─────────────────────────┼─────────┼──────────────────────────────────────────────────────────┤
+  │ docs/USER_GUIDE.md      │ Agent 3 │ Reading examples, building tutorials                     │
+  ├─────────────────────────┼─────────┼──────────────────────────────────────────────────────────┤
+  │ README.md               │ Agent 4 │ Read existing file, writing updated version              │
+  └─────────────────────────┴─────────┴──────────────────────────────────────────────────────────┘
+
+  I'll let them finish and then verify all files. This will take a few minutes since each document is very
+  large.
+
+✻ Brewed for 4m 56s
+
+● Agent "Write updated README.md" completed
+
+● README.md is complete! The agent kept all existing content and added Quick Start, Documentation links,      Platform Support, Building from Source, and Project Structure sections.
+                                                                                                              The other 3 agents are still working on the larger documents. Let me check their progress.
+                                                                                                            ● Task Output(non-blocking) a66d900cd04ead37d
+  ⎿  Task is still running…
+                                                                                                            ● Task Output(non-blocking) a67f9562f0a897021
+  ⎿  Task is still running…                                                                                                                                                                                             ● Task Output(non-blocking) a967542e255f7e7aa                                                                 ⎿  Task is still running…                                                                                                                                                                                             ● All 3 remaining agents are actively working - reading source code and building their documentation. Here's   the current status:                                                                                                                                                                                                    ┌─────────────────────────┬────────────────────────────────────────────────────────────────────────────┐
+  │        Document         │                                   Status                                   │
+  ├─────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+  │ README.md               │ Done                                                                       │
+  ├─────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+  │ CLAUDE.md               │ Done (updated with doc links)                                              │
+  ├─────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+  │ docs/ARCHITECTURE.md    │ In progress - reading meep.hpp, adjoint files, source/geom code            │
+  ├─────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+  │ docs/DEVELOPER_GUIDE.md │ In progress - reading requirements.txt, pre-commit config, source files    │
+  ├─────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+  │ docs/USER_GUIDE.md      │ In progress - reading examples (bent-waveguide.py, geom.py), simulation.py │
+  └─────────────────────────┴────────────────────────────────────────────────────────────────────────────┘
+
+  These are large documents (each will be 500+ lines) so they take time to write. I'll notify you as each
+  one completes.
+──────────────────────────────────────────────────────────────────────────────────────────────────────────── Background tasks                                                                                            3 active agents
+
+   Local agents (3)
+ > Write USER_GUIDE.md documentation (running)                                                                 Write DEVELOPER_GUIDE.md documentation (running)
+   Write ARCHITECTURE.md documentation (running)
+
+ ↑/↓ to select · Enter to view · k to kill · ctrl+f to kill all agents · Esc to close
+
+
+
+
+
+
+
+
+
+it completed all docs
+
+then
+
+
+crashed again
+
+
+                                                                                                           ● Searched for 2 patterns (ctrl+o to expand)                                                                                                                                                                            ● Both files are comprehensive. Let me also verify the ASCII diagrams in ARCHITECTURE.md and the use cases
+  in USER_GUIDE.md.                                                                                         
+● Searching for 2 patterns… (ctrl+o to expand)
+     ctrl+b to run in background                                                                            
+✻ Creating… (11m 20s · ↓ 567 tokens · thought for 2s)                                                       ────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Background tasks
+
+ No tasks currently running
+
+ ↑/↓ to select · Enter to view · Esc to close
+============================================================
+Bun v1.3.10 (1423d3c8) Windows x64 (baseline)
+Windows v.win11_dt
+CPU: sse42 avx avx2
+Args: "C:\Users\simon\.local\bin\claude.exe" "--permission-mode" "bypassPermissions" "--chrome" "--continue"
+Features: Bun.stderr Bun.stdin(2) Bun.stdout(3) abort_signal(116) fetch(555) jsc spawn(59) standalone_executable process_dlopen(2) yaml_parse(267)
+Builtins: "bun:main" "node:assert" "node:async_hooks" "node:buffer" "node:child_process" "node:constants" "node:crypto" "node:events" "node:fs" "node:fs/promises" "node:http" "node:https" "node:module" "node:net" "node:os" "node:path" "node:path/posix" "node:path/win32" "node:perf_hooks" "node:process" "node:stream" "node:timers/promises" "node:tls" "node:tty" "node:url" "node:util" "node:zlib" "node:worker_threads" "undici" "ws"
+Elapsed: 3481540ms | User: 145281ms | Sys: 27421ms
+RSS: 0.96GB | Peak: 1.06GB | Commit: 1.39GB | Faults: 2549582 | Machine: 34.01GB
+
+panic(main thread): switch on corrupt value
+oh no: Bun has crashed. This indicates a bug in Bun, not your code.
+
+To send a redacted crash report to Bun's team,
+please file a GitHub issue using the link below:
+
+ https://bun.report/1.3.10/e_11423d3cmgkgEuhogC0w3jQk8vtbi+p4Vw7r0U23wN+o5gUmznlOqn4kOwkkqvDCYKERNEL32.DLLut0LCSntdll.dll4gijBA0eNorLs8sSc5QyM9TSM4vKiotKFEoS8wpTQUAa8EI/A
+
+
+simon@Simon_laptop MINGW64 ~/Downloads/meep-master
+$
+
+
+
+
+crashed

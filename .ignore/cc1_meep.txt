@@ -1,0 +1,54 @@
+─── Claude Code v2.1.50 ──────────────────────────────────────────────────────╮
+│                                                    │ Tips for getting        │
+│                 Welcome back Simon!                │ started                 │
+│                                                    │ Run /init to create a … │
+│                                                    │ ─────────────────────── │
+│                                                    │ Recent activity         │
+│                          ✻                         │ No recent activity      │
+│                          |                         │                         │
+│                         ▟█▙                        │                         │
+│                       ▐▛███▜▌                      │                         │
+│                      ▝▜█████▛▘                     │                         │
+│                        ▘▘ ▝▝                       │                         │
+│     Opus 4.6 · Claude Max · az9713@yahoo.com's     │                         │
+│     Organization                                   │                         │
+│               ~\Downloads\meep-master              │                         │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+> /init                                                                         
+● I'll analyze the codebase to create a comprehensive CLAUDE.md. Let me explore   the project structure first.
+                                                                                ● Explore(Explore meep codebase structure)
+  ⎿  Waiting…d /c/Users/simon/Downloads/meep-master/src -type f -name "*.hpp" -o     Read(doc\docs\Python_Developer_Information.md)                             
+     +41 more tool uses (ctrl+o to expand)
+     ctrl+b to run in background
+                                                                                ✶ Waddling… (18m 46s · ↓ 1.6k tokens · thinking)                                                                                                                ────────────────────────────────────────────────────────────────────────────────
+> 
+────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ bypass permissions on · 1 bash · esc to interrupt
+============================================================
+Bun v1.3.10 (1423d3c8) Windows x64 (baseline)
+Windows v.win11_dt
+CPU: sse42 avx avx2
+Args: "C:\Users\simon\.local\bin\claude.exe" "--permission-mode" "bypassPermissions" "--chrome"
+Features: Bun.stderr Bun.stdin(2) Bun.stdout(3) abort_signal(36) fetch(282) jsc spawn(56) standalone_executable process_dlopen(2) yaml_parse(198)
+Builtins: "bun:main" "node:assert" "node:async_hooks" "node:buffer" "node:child_process" "node:constants" "node:crypto" "node:events" "node:fs" "node:fs/promises" "node:http" "node:https" "node:module" "node:net" "node:os" "node:path" "node:path/posix" "node:path/win32" "node:perf_hooks" "node:process" "node:stream" "node:timers/promises" "node:tls" "node:tty" "node:url" "node:util" "node:zlib" "node:worker_threads" "undici" "ws"
+Elapsed: 1461580ms | User: 104906ms | Sys: 21062ms
+RSS: 1.16GB | Peak: 1.17GB | Commit: 1.58GB | Faults: 1411084 | Machine: 34.01GB
+
+panic(main thread): switch on corrupt value
+oh no: Bun has crashed. This indicates a bug in Bun, not your code.
+
+To send a redacted crash report to Bun's team,
+please file a GitHub issue using the link below:
+
+ https://bun.report/1.3.10/e_11423d3cmgkgEuhogC0w3jQk8vtbi+p4Vw7r0U23wN+o5gUmznlOqn4kOwkkqvDCYKERNEL32.DLLut0LCSntdll.dll4gijBA0eNorLs8sSc5QyM9TSM4vKiotKFEoS8wpTQUAa8EI/A
+
+
+simon@Simon_laptop MINGW64 ~/Downloads/meep-master
+$
+
+
+
+<-- 2nd time bun crashed
+first time testing worktree
+restart
