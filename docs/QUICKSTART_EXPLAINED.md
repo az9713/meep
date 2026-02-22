@@ -211,6 +211,8 @@ Key information:
 
 ### 4.2 The Field Plot
 
+![Hz field in a 2D dielectric waveguide](../waveguide_hz.png)
+
 The output image (`waveguide_hz.png`) shows:
 
 ```
