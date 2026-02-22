@@ -101,6 +101,7 @@ For more examples and step-by-step tutorials, see the [online manual](https://me
 
 | Resource | Description |
 |---|---|
+| [docs/QUICKSTART_EXPLAINED.md](docs/QUICKSTART_EXPLAINED.md) | Quick Start Explained: physics, simulation setup, and results walkthrough |
 | [docs/USER_GUIDE.md](docs/USER_GUIDE.md) | User Guide: installation, tutorials, and 10 worked use cases |
 | [docs/DEVELOPER_GUIDE.md](docs/DEVELOPER_GUIDE.md) | Developer Guide: building from source, testing, and contributing |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Architecture Documentation: system design, diagrams, and code reference |
