@@ -1,0 +1,151 @@
+{
+  "batch": "batch4",
+  "results": [
+    {
+      "name": "planar_cavity_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.08,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "plot_radiation_pattern_dipole.py",
+      "status": "FAIL",
+      "time": 3.33,
+      "error": "l last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/plot_radiation_pattern_dipole.py\", line 132, in <module>\n    data = np.load(\"dipole_radiation_pattern.npz\")\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py\", line 454, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\n                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'dipole_radiation_pattern.npz'\n"
+    },
+    {
+      "name": "point_dipole_cyl.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "polarization_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "pw-source.py",
+      "status": "PASS",
+      "time": 13.58,
+      "error": ""
+    },
+    {
+      "name": "refl-angular-kz2d.py",
+      "status": "TIMEOUT",
+      "time": 180.1,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "refl-angular.py",
+      "status": "PASS",
+      "time": 19.35,
+      "error": ""
+    },
+    {
+      "name": "refl-quartz.py",
+      "status": "PASS",
+      "time": 23.27,
+      "error": ""
+    },
+    {
+      "name": "ring-cyl.py",
+      "status": "PASS",
+      "time": 24.77,
+      "error": ""
+    },
+    {
+      "name": "ring-mode-overlap.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "ring.py",
+      "status": "PASS",
+      "time": 26.53,
+      "error": ""
+    },
+    {
+      "name": "ring_gds.py",
+      "status": "FAIL",
+      "time": 0.42,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/ring_gds.py\", line 3, in <module>\n    import gdspy\nModuleNotFoundError: No module named 'gdspy'\n"
+    },
+    {
+      "name": "solve-cw.py",
+      "status": "FAIL",
+      "time": 6.69,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/solve-cw.py\", line 80, in <module>\n    dtype=np.complex_,\n          ^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/__init__.py\", line 778, in __getattr__\n    raise AttributeError(\n    ...<3 lines>...\n    )\nAttributeError: `np.complex_` was removed in the NumPy 2.0 release. Use `np.complex128` instead.\n"
+    },
+    {
+      "name": "stochastic_emitter.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "stochastic_emitter_line.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "stochastic_emitter_reciprocity.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "straight-waveguide.py",
+      "status": "PASS",
+      "time": 8.97,
+      "error": ""
+    },
+    {
+      "name": "waveguide_crossing.py",
+      "status": "FAIL",
+      "time": 13.94,
+      "error": "    )\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 558, in __init__\n    super().__init__(src, component, center, volume, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 127, in __init__\n    self.amplitude = complex(amplitude)\n                     ~~~~~~~^^^^^^^^^^^\nTypeError: only 0-dimensional arrays can be converted to Python scalars\n"
+    },
+    {
+      "name": "wvg-src.py",
+      "status": "FAIL",
+      "time": 11.35,
+      "error": "                   ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'h5topng'\n"
+    },
+    {
+      "name": "zone_plate.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_levelset.py",
+      "status": "FAIL",
+      "time": 93.67,
+      "error": "    )\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 558, in __init__\n    super().__init__(src, component, center, volume, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 127, in __init__\n    self.amplitude = complex(amplitude)\n                     ~~~~~~~^^^^^^^^^^^\nTypeError: only 0-dimensional arrays can be converted to Python scalars\n"
+    },
+    {
+      "name": "mode_converter.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "multilayer_opt.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    }
+  ],
+  "summary": {
+    "total": 23,
+    "passed": 6,
+    "failed": 6,
+    "timeout": 11,
+    "errors": 0,
+    "total_time": 2226.9
+  }
+}

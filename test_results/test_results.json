@@ -1,0 +1,1768 @@
+{
+  "total": 293,
+  "passed": 146,
+  "failed": 49,
+  "timeout": 98,
+  "errors": 0,
+  "total_time": 26368.6,
+  "results": [
+    {
+      "name": "3rd-harm-1d.py",
+      "status": "PASS",
+      "time": 118.53,
+      "error": ""
+    },
+    {
+      "name": "absorbed_power_density.py",
+      "status": "TIMEOUT",
+      "time": 180.08,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "absorber-1d.py",
+      "status": "PASS",
+      "time": 10.72,
+      "error": ""
+    },
+    {
+      "name": "antenna-radiation.py",
+      "status": "FAIL",
+      "time": 50.45,
+      "error": "s/simon/Downloads/meep-master/python/examples/antenna-radiation.py\", line 177, in antenna_radiation_pattern\n    flux_radiation_pattern = np.trapz(radial_flux * FARFIELD_RADIUS_UM, x=polar_rad)\n                             ^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/__init__.py\", line 792, in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nAttributeError: module 'numpy' has no attribute 'trapz'. Did you mean: 'trace'?\n"
+    },
+    {
+      "name": "antenna_pec_ground_plane.py",
+      "status": "PASS",
+      "time": 145.6,
+      "error": ""
+    },
+    {
+      "name": "antenna_pec_ground_plane_1D.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "bend-flux.py",
+      "status": "PASS",
+      "time": 30.9,
+      "error": ""
+    },
+    {
+      "name": "bent-waveguide.py",
+      "status": "PASS",
+      "time": 18.59,
+      "error": ""
+    },
+    {
+      "name": "binary_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_n2f.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_oblique.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_phasemap.py",
+      "status": "PASS",
+      "time": 74.11,
+      "error": ""
+    },
+    {
+      "name": "cavity-farfield.py",
+      "status": "TIMEOUT",
+      "time": 180.1,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "cavity_arrayslice.py",
+      "status": "FAIL",
+      "time": 11.81,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/cavity_arrayslice.py\", line 52, in <module>\n    slice1d = sim.get_array(mp.Volume(center_1d, size=size_1d), component=mp.Hz)\nTypeError: Simulation.get_array() got multiple values for argument 'component'\n"
+    },
+    {
+      "name": "cherenkov-radiation.py",
+      "status": "FAIL",
+      "time": 11.45,
+      "error": "                   ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'h5topng'\n"
+    },
+    {
+      "name": "chirped_pulse.py",
+      "status": "PASS",
+      "time": 117.37,
+      "error": ""
+    },
+    {
+      "name": "coupler.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "cyl-ellipsoid.py",
+      "status": "PASS",
+      "time": 116.38,
+      "error": ""
+    },
+    {
+      "name": "cylinder_cross_section.py",
+      "status": "PASS",
+      "time": 61.66,
+      "error": ""
+    },
+    {
+      "name": "differential_cross_section.py",
+      "status": "TIMEOUT",
+      "time": 180.24,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "diffracted_planewave.py",
+      "status": "PASS",
+      "time": 157.17,
+      "error": ""
+    },
+    {
+      "name": "dipole_in_vacuum_1D.py",
+      "status": "FAIL",
+      "time": 1.89,
+      "error": "usage: dipole_in_vacuum_1D.py [-h] {x,y}\ndipole_in_vacuum_1D.py: error: the following arguments are required: dipole_pol\n"
+    },
+    {
+      "name": "dipole_in_vacuum_cyl_off_axis.py",
+      "status": "FAIL",
+      "time": 2.6,
+      "error": "usage: dipole_in_vacuum_cyl_off_axis.py [-h] {x,y} dipole_pos_r\ndipole_in_vacuum_cyl_off_axis.py: error: the following arguments are required: dipole_pol, dipole_pos_r\n"
+    },
+    {
+      "name": "dipole_in_vacuum_cyl_on_axis.py",
+      "status": "FAIL",
+      "time": 2.05,
+      "error": "usage: dipole_in_vacuum_cyl_on_axis.py [-h] {x,z}\ndipole_in_vacuum_cyl_on_axis.py: error: the following arguments are required: dipole_pol\n"
+    },
+    {
+      "name": "disc_extraction_efficiency.py",
+      "status": "TIMEOUT",
+      "time": 180.02,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "disc_radiation_pattern.py",
+      "status": "TIMEOUT",
+      "time": 180.02,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "eps_fit_lorentzian.py",
+      "status": "FAIL",
+      "time": 1.95,
+      "error": "ource.open(fname, 'rt', encoding=encoding)\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_datasource.py\", line 192, in open\n    return ds.open(path, mode, encoding=encoding, newline=newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_datasource.py\", line 529, in open\n    raise FileNotFoundError(f\"{path} not found.\")\nFileNotFoundError: mymaterial.csv not found.\n"
+    },
+    {
+      "name": "extraction_eff_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "faraday-rotation.py",
+      "status": "PASS",
+      "time": 3.19,
+      "error": ""
+    },
+    {
+      "name": "finite_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "gaussian-beam.py",
+      "status": "PASS",
+      "time": 95.44,
+      "error": ""
+    },
+    {
+      "name": "grating2d_triangular_lattice.py",
+      "status": "TIMEOUT",
+      "time": 180.48,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "holey-wvg-bands.py",
+      "status": "TIMEOUT",
+      "time": 180.19,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "holey-wvg-cavity.py",
+      "status": "PASS",
+      "time": 46.51,
+      "error": ""
+    },
+    {
+      "name": "material-dispersion.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "metal-cavity-ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "metasurface_lens.py",
+      "status": "TIMEOUT",
+      "time": 180.11,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mie_scattering.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mode-decomposition.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mode_coeff_phase.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_bragg.py",
+      "status": "PASS",
+      "time": 7.86,
+      "error": ""
+    },
+    {
+      "name": "mpb_bragg_sine.py",
+      "status": "PASS",
+      "time": 6.03,
+      "error": ""
+    },
+    {
+      "name": "mpb_data_analysis.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_diamond.py",
+      "status": "PASS",
+      "time": 117.0,
+      "error": ""
+    },
+    {
+      "name": "mpb_hole_slab.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_honey_rods.py",
+      "status": "PASS",
+      "time": 35.36,
+      "error": ""
+    },
+    {
+      "name": "mpb_line_defect.py",
+      "status": "FAIL",
+      "time": 3.25,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/mpb_line_defect.py\", line 67, in <module>\n    main()\n    ~~~~^^\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/mpb_line_defect.py\", line 61, in main\n    ms.fix_efield_phase,\n    ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'ModeSolver' object has no attribute 'fix_efield_phase'. Did you mean: 'fix_field_phase'?\n"
+    },
+    {
+      "name": "mpb_sq_rods.py",
+      "status": "PASS",
+      "time": 26.42,
+      "error": ""
+    },
+    {
+      "name": "mpb_strip.py",
+      "status": "PASS",
+      "time": 16.3,
+      "error": ""
+    },
+    {
+      "name": "mpb_tri_holes.py",
+      "status": "PASS",
+      "time": 14.54,
+      "error": ""
+    },
+    {
+      "name": "mpb_tri_rods.py",
+      "status": "PASS",
+      "time": 14.98,
+      "error": ""
+    },
+    {
+      "name": "mpb_tutorial.py",
+      "status": "TIMEOUT",
+      "time": 180.03,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "multilevel-atom.py",
+      "status": "TIMEOUT",
+      "time": 180.03,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "oblique-planewave.py",
+      "status": "PASS",
+      "time": 26.71,
+      "error": ""
+    },
+    {
+      "name": "oblique-source.py",
+      "status": "TIMEOUT",
+      "time": 180.02,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "parallel-wvgs-force.py",
+      "status": "TIMEOUT",
+      "time": 180.03,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "parallel-wvgs-mpb.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "perturbation_theory.py",
+      "status": "PASS",
+      "time": 66.24,
+      "error": ""
+    },
+    {
+      "name": "perturbation_theory_2d.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "phase_in_material.py",
+      "status": "PASS",
+      "time": 7.66,
+      "error": ""
+    },
+    {
+      "name": "planar_cavity_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.08,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "plot_radiation_pattern_dipole.py",
+      "status": "FAIL",
+      "time": 8.8,
+      "error": "l last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/plot_radiation_pattern_dipole.py\", line 132, in <module>\n    data = np.load(\"dipole_radiation_pattern.npz\")\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py\", line 454, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\n                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'dipole_radiation_pattern.npz'\n"
+    },
+    {
+      "name": "point_dipole_cyl.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "polarization_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "pw-source.py",
+      "status": "PASS",
+      "time": 13.93,
+      "error": ""
+    },
+    {
+      "name": "refl-angular-kz2d.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "refl-angular.py",
+      "status": "PASS",
+      "time": 18.92,
+      "error": ""
+    },
+    {
+      "name": "refl-quartz.py",
+      "status": "PASS",
+      "time": 14.21,
+      "error": ""
+    },
+    {
+      "name": "ring-cyl.py",
+      "status": "PASS",
+      "time": 20.03,
+      "error": ""
+    },
+    {
+      "name": "ring-mode-overlap.py",
+      "status": "TIMEOUT",
+      "time": 180.12,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "ring.py",
+      "status": "PASS",
+      "time": 20.48,
+      "error": ""
+    },
+    {
+      "name": "ring_gds.py",
+      "status": "FAIL",
+      "time": 0.46,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/ring_gds.py\", line 3, in <module>\n    import gdspy\nModuleNotFoundError: No module named 'gdspy'\n"
+    },
+    {
+      "name": "solve-cw.py",
+      "status": "FAIL",
+      "time": 7.05,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/solve-cw.py\", line 80, in <module>\n    dtype=np.complex_,\n          ^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/__init__.py\", line 778, in __getattr__\n    raise AttributeError(\n    ...<3 lines>...\n    )\nAttributeError: `np.complex_` was removed in the NumPy 2.0 release. Use `np.complex128` instead.\n"
+    },
+    {
+      "name": "stochastic_emitter.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "stochastic_emitter_line.py",
+      "status": "TIMEOUT",
+      "time": 180.16,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "stochastic_emitter_reciprocity.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "straight-waveguide.py",
+      "status": "PASS",
+      "time": 9.18,
+      "error": ""
+    },
+    {
+      "name": "waveguide_crossing.py",
+      "status": "FAIL",
+      "time": 16.15,
+      "error": "    )\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 558, in __init__\n    super().__init__(src, component, center, volume, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 127, in __init__\n    self.amplitude = complex(amplitude)\n                     ~~~~~~~^^^^^^^^^^^\nTypeError: only 0-dimensional arrays can be converted to Python scalars\n"
+    },
+    {
+      "name": "wvg-src.py",
+      "status": "FAIL",
+      "time": 15.61,
+      "error": "                   ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'h5topng'\n"
+    },
+    {
+      "name": "zone_plate.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_3rd_harm_1d.py",
+      "status": "PASS",
+      "time": 13.07,
+      "error": ""
+    },
+    {
+      "name": "test_absorber_1d.py",
+      "status": "PASS",
+      "time": 40.85,
+      "error": ""
+    },
+    {
+      "name": "test_adjoint_cyl.py",
+      "status": "FAIL",
+      "time": 9.36,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_cyl.py\", line 15, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_adjoint_jax.py",
+      "status": "FAIL",
+      "time": 0.88,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_jax.py\", line 3, in <module>\n    import jax\nModuleNotFoundError: No module named 'jax'\n"
+    },
+    {
+      "name": "test_adjoint_solver.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_adjoint_utils.py",
+      "status": "FAIL",
+      "time": 10.05,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_utils.py\", line 19, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_antenna_radiation.py",
+      "status": "PASS",
+      "time": 156.29,
+      "error": ""
+    },
+    {
+      "name": "test_array_metadata.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_bend_flux.py",
+      "status": "PASS",
+      "time": 63.45,
+      "error": ""
+    },
+    {
+      "name": "test_binary_grating.py",
+      "status": "FAIL",
+      "time": 1.56,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_binary_grating.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_binary_partition_utils.py",
+      "status": "FAIL",
+      "time": 7.7,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_binary_partition_utils.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_boundaries_1D.py",
+      "status": "PASS",
+      "time": 125.82,
+      "error": ""
+    },
+    {
+      "name": "test_cavity_arrayslice.py",
+      "status": "PASS",
+      "time": 41.95,
+      "error": ""
+    },
+    {
+      "name": "test_cavity_farfield.py",
+      "status": "PASS",
+      "time": 21.65,
+      "error": ""
+    },
+    {
+      "name": "test_chunk_balancer.py",
+      "status": "FAIL",
+      "time": 14.41,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_chunk_balancer.py\", line 5, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_chunk_layout.py",
+      "status": "PASS",
+      "time": 8.73,
+      "error": ""
+    },
+    {
+      "name": "test_chunks.py",
+      "status": "PASS",
+      "time": 22.8,
+      "error": ""
+    },
+    {
+      "name": "test_conductivity.py",
+      "status": "PASS",
+      "time": 172.78,
+      "error": ""
+    },
+    {
+      "name": "test_cyl_ellipsoid.py",
+      "status": "PASS",
+      "time": 170.16,
+      "error": ""
+    },
+    {
+      "name": "test_dft_energy.py",
+      "status": "PASS",
+      "time": 15.17,
+      "error": ""
+    },
+    {
+      "name": "test_dft_fields.py",
+      "status": "PASS",
+      "time": 19.97,
+      "error": ""
+    },
+    {
+      "name": "test_diffracted_planewave.py",
+      "status": "PASS",
+      "time": 134.93,
+      "error": ""
+    },
+    {
+      "name": "test_dispersive_eigenmode.py",
+      "status": "PASS",
+      "time": 57.59,
+      "error": ""
+    },
+    {
+      "name": "test_divide_mpi_processes.py",
+      "status": "PASS",
+      "time": 7.83,
+      "error": ""
+    },
+    {
+      "name": "test_dump_load.py",
+      "status": "TIMEOUT",
+      "time": 180.11,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_eigfreq.py",
+      "status": "TIMEOUT",
+      "time": 180.18,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_faraday_rotation.py",
+      "status": "PASS",
+      "time": 12.45,
+      "error": ""
+    },
+    {
+      "name": "test_field_functions.py",
+      "status": "PASS",
+      "time": 14.05,
+      "error": ""
+    },
+    {
+      "name": "test_force.py",
+      "status": "PASS",
+      "time": 11.59,
+      "error": ""
+    },
+    {
+      "name": "test_fragment_stats.py",
+      "status": "PASS",
+      "time": 6.12,
+      "error": ""
+    },
+    {
+      "name": "test_gaussianbeam.py",
+      "status": "PASS",
+      "time": 90.27,
+      "error": ""
+    },
+    {
+      "name": "test_geom.py",
+      "status": "PASS",
+      "time": 7.74,
+      "error": ""
+    },
+    {
+      "name": "test_get_epsilon_grid.py",
+      "status": "FAIL",
+      "time": 9.72,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_get_epsilon_grid.py\", line 5, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_get_point.py",
+      "status": "PASS",
+      "time": 8.34,
+      "error": ""
+    },
+    {
+      "name": "test_holey_wvg_bands.py",
+      "status": "PASS",
+      "time": 105.74,
+      "error": ""
+    },
+    {
+      "name": "test_holey_wvg_cavity.py",
+      "status": "PASS",
+      "time": 43.77,
+      "error": ""
+    },
+    {
+      "name": "test_integrated_source.py",
+      "status": "PASS",
+      "time": 7.25,
+      "error": ""
+    },
+    {
+      "name": "test_kdom.py",
+      "status": "PASS",
+      "time": 10.53,
+      "error": ""
+    },
+    {
+      "name": "test_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_material_dispersion.py",
+      "status": "PASS",
+      "time": 92.95,
+      "error": ""
+    },
+    {
+      "name": "test_material_grid.py",
+      "status": "TIMEOUT",
+      "time": 180.1,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_materials_library.py",
+      "status": "PASS",
+      "time": 11.44,
+      "error": ""
+    },
+    {
+      "name": "test_medium_evaluations.py",
+      "status": "PASS",
+      "time": 11.52,
+      "error": ""
+    },
+    {
+      "name": "test_mode_coeffs.py",
+      "status": "TIMEOUT",
+      "time": 180.12,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_mode_decomposition.py",
+      "status": "FAIL",
+      "time": 0.65,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_mode_decomposition.py\", line 4, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_mpb.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_multilevel_atom.py",
+      "status": "PASS",
+      "time": 45.24,
+      "error": ""
+    },
+    {
+      "name": "test_n2f_periodic.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_oblique_source.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_physical.py",
+      "status": "PASS",
+      "time": 11.84,
+      "error": ""
+    },
+    {
+      "name": "test_planewave_1D.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_pml_cyl.py",
+      "status": "FAIL",
+      "time": 0.54,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_pml_cyl.py\", line 2, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_prism.py",
+      "status": "TIMEOUT",
+      "time": 180.33,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_pw_source.py",
+      "status": "PASS",
+      "time": 12.28,
+      "error": ""
+    },
+    {
+      "name": "test_refl_angular.py",
+      "status": "FAIL",
+      "time": 1.31,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_refl_angular.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_ring.py",
+      "status": "PASS",
+      "time": 65.09,
+      "error": ""
+    },
+    {
+      "name": "test_ring_cyl.py",
+      "status": "PASS",
+      "time": 15.2,
+      "error": ""
+    },
+    {
+      "name": "test_simulation.py",
+      "status": "PASS",
+      "time": 46.02,
+      "error": ""
+    },
+    {
+      "name": "test_source.py",
+      "status": "PASS",
+      "time": 42.13,
+      "error": ""
+    },
+    {
+      "name": "test_special_kz.py",
+      "status": "FAIL",
+      "time": 0.89,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_special_kz.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_timing_measurements.py",
+      "status": "PASS",
+      "time": 14.02,
+      "error": ""
+    },
+    {
+      "name": "test_user_defined_material.py",
+      "status": "PASS",
+      "time": 16.11,
+      "error": ""
+    },
+    {
+      "name": "test_verbosity_mgr.py",
+      "status": "PASS",
+      "time": 8.93,
+      "error": ""
+    },
+    {
+      "name": "test_visualization.py",
+      "status": "PASS",
+      "time": 22.04,
+      "error": ""
+    },
+    {
+      "name": "test_wvg_src.py",
+      "status": "PASS",
+      "time": 17.02,
+      "error": ""
+    },
+    {
+      "name": "3rd-harm-1d.py",
+      "status": "PASS",
+      "time": 35.69,
+      "error": ""
+    },
+    {
+      "name": "absorbed_power_density.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "absorber-1d.py",
+      "status": "PASS",
+      "time": 5.52,
+      "error": ""
+    },
+    {
+      "name": "antenna-radiation.py",
+      "status": "FAIL",
+      "time": 39.04,
+      "error": "s/simon/Downloads/meep-master/python/examples/antenna-radiation.py\", line 177, in antenna_radiation_pattern\n    flux_radiation_pattern = np.trapz(radial_flux * FARFIELD_RADIUS_UM, x=polar_rad)\n                             ^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/__init__.py\", line 792, in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nAttributeError: module 'numpy' has no attribute 'trapz'. Did you mean: 'trace'?\n"
+    },
+    {
+      "name": "antenna_pec_ground_plane.py",
+      "status": "PASS",
+      "time": 128.23,
+      "error": ""
+    },
+    {
+      "name": "antenna_pec_ground_plane_1D.py",
+      "status": "TIMEOUT",
+      "time": 180.08,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "bend-flux.py",
+      "status": "PASS",
+      "time": 29.24,
+      "error": ""
+    },
+    {
+      "name": "bent-waveguide.py",
+      "status": "PASS",
+      "time": 18.41,
+      "error": ""
+    },
+    {
+      "name": "binary_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_n2f.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_oblique.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_phasemap.py",
+      "status": "PASS",
+      "time": 135.45,
+      "error": ""
+    },
+    {
+      "name": "cavity-farfield.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "cavity_arrayslice.py",
+      "status": "FAIL",
+      "time": 15.51,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/cavity_arrayslice.py\", line 52, in <module>\n    slice1d = sim.get_array(mp.Volume(center_1d, size=size_1d), component=mp.Hz)\nTypeError: Simulation.get_array() got multiple values for argument 'component'\n"
+    },
+    {
+      "name": "cherenkov-radiation.py",
+      "status": "FAIL",
+      "time": 13.11,
+      "error": "                   ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'h5topng'\n"
+    },
+    {
+      "name": "chirped_pulse.py",
+      "status": "PASS",
+      "time": 106.64,
+      "error": ""
+    },
+    {
+      "name": "coupler.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "cyl-ellipsoid.py",
+      "status": "PASS",
+      "time": 117.75,
+      "error": ""
+    },
+    {
+      "name": "cylinder_cross_section.py",
+      "status": "PASS",
+      "time": 94.21,
+      "error": ""
+    },
+    {
+      "name": "differential_cross_section.py",
+      "status": "TIMEOUT",
+      "time": 180.26,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "diffracted_planewave.py",
+      "status": "PASS",
+      "time": 148.64,
+      "error": ""
+    },
+    {
+      "name": "dipole_in_vacuum_1D.py",
+      "status": "FAIL",
+      "time": 4.34,
+      "error": "usage: dipole_in_vacuum_1D.py [-h] {x,y}\ndipole_in_vacuum_1D.py: error: the following arguments are required: dipole_pol\n"
+    },
+    {
+      "name": "dipole_in_vacuum_cyl_off_axis.py",
+      "status": "FAIL",
+      "time": 3.67,
+      "error": "usage: dipole_in_vacuum_cyl_off_axis.py [-h] {x,y} dipole_pos_r\ndipole_in_vacuum_cyl_off_axis.py: error: the following arguments are required: dipole_pol, dipole_pos_r\n"
+    },
+    {
+      "name": "dipole_in_vacuum_cyl_on_axis.py",
+      "status": "FAIL",
+      "time": 4.42,
+      "error": "usage: dipole_in_vacuum_cyl_on_axis.py [-h] {x,z}\ndipole_in_vacuum_cyl_on_axis.py: error: the following arguments are required: dipole_pol\n"
+    },
+    {
+      "name": "disc_extraction_efficiency.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "disc_radiation_pattern.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "eps_fit_lorentzian.py",
+      "status": "FAIL",
+      "time": 7.14,
+      "error": "ource.open(fname, 'rt', encoding=encoding)\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_datasource.py\", line 192, in open\n    return ds.open(path, mode, encoding=encoding, newline=newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_datasource.py\", line 529, in open\n    raise FileNotFoundError(f\"{path} not found.\")\nFileNotFoundError: mymaterial.csv not found.\n"
+    },
+    {
+      "name": "extraction_eff_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "faraday-rotation.py",
+      "status": "PASS",
+      "time": 21.19,
+      "error": ""
+    },
+    {
+      "name": "finite_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "gaussian-beam.py",
+      "status": "PASS",
+      "time": 68.32,
+      "error": ""
+    },
+    {
+      "name": "grating2d_triangular_lattice.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "holey-wvg-bands.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "holey-wvg-cavity.py",
+      "status": "PASS",
+      "time": 35.82,
+      "error": ""
+    },
+    {
+      "name": "material-dispersion.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "metal-cavity-ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "metasurface_lens.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mie_scattering.py",
+      "status": "TIMEOUT",
+      "time": 180.51,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mode-decomposition.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mode_coeff_phase.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_bragg.py",
+      "status": "PASS",
+      "time": 5.4,
+      "error": ""
+    },
+    {
+      "name": "mpb_bragg_sine.py",
+      "status": "PASS",
+      "time": 5.59,
+      "error": ""
+    },
+    {
+      "name": "mpb_data_analysis.py",
+      "status": "PASS",
+      "time": 123.89,
+      "error": ""
+    },
+    {
+      "name": "mpb_diamond.py",
+      "status": "PASS",
+      "time": 61.02,
+      "error": ""
+    },
+    {
+      "name": "mpb_hole_slab.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_honey_rods.py",
+      "status": "PASS",
+      "time": 103.59,
+      "error": ""
+    },
+    {
+      "name": "mpb_line_defect.py",
+      "status": "FAIL",
+      "time": 7.84,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/mpb_line_defect.py\", line 67, in <module>\n    main()\n    ~~~~^^\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/mpb_line_defect.py\", line 61, in main\n    ms.fix_efield_phase,\n    ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'ModeSolver' object has no attribute 'fix_efield_phase'. Did you mean: 'fix_field_phase'?\n"
+    },
+    {
+      "name": "mpb_sq_rods.py",
+      "status": "PASS",
+      "time": 83.06,
+      "error": ""
+    },
+    {
+      "name": "mpb_strip.py",
+      "status": "PASS",
+      "time": 58.61,
+      "error": ""
+    },
+    {
+      "name": "mpb_tri_holes.py",
+      "status": "PASS",
+      "time": 72.2,
+      "error": ""
+    },
+    {
+      "name": "mpb_tri_rods.py",
+      "status": "PASS",
+      "time": 99.73,
+      "error": ""
+    },
+    {
+      "name": "mpb_tutorial.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "multilevel-atom.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "oblique-planewave.py",
+      "status": "PASS",
+      "time": 110.04,
+      "error": ""
+    },
+    {
+      "name": "oblique-source.py",
+      "status": "TIMEOUT",
+      "time": 180.12,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "parallel-wvgs-force.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "parallel-wvgs-mpb.py",
+      "status": "TIMEOUT",
+      "time": 180.36,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "perturbation_theory.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "perturbation_theory_2d.py",
+      "status": "TIMEOUT",
+      "time": 180.31,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "phase_in_material.py",
+      "status": "PASS",
+      "time": 11.5,
+      "error": ""
+    },
+    {
+      "name": "planar_cavity_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.08,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "plot_radiation_pattern_dipole.py",
+      "status": "FAIL",
+      "time": 3.33,
+      "error": "l last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/plot_radiation_pattern_dipole.py\", line 132, in <module>\n    data = np.load(\"dipole_radiation_pattern.npz\")\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py\", line 454, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\n                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'dipole_radiation_pattern.npz'\n"
+    },
+    {
+      "name": "point_dipole_cyl.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "polarization_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "pw-source.py",
+      "status": "PASS",
+      "time": 13.58,
+      "error": ""
+    },
+    {
+      "name": "refl-angular-kz2d.py",
+      "status": "TIMEOUT",
+      "time": 180.1,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "refl-angular.py",
+      "status": "PASS",
+      "time": 19.35,
+      "error": ""
+    },
+    {
+      "name": "refl-quartz.py",
+      "status": "PASS",
+      "time": 23.27,
+      "error": ""
+    },
+    {
+      "name": "ring-cyl.py",
+      "status": "PASS",
+      "time": 24.77,
+      "error": ""
+    },
+    {
+      "name": "ring-mode-overlap.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "ring.py",
+      "status": "PASS",
+      "time": 26.53,
+      "error": ""
+    },
+    {
+      "name": "ring_gds.py",
+      "status": "FAIL",
+      "time": 0.42,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/ring_gds.py\", line 3, in <module>\n    import gdspy\nModuleNotFoundError: No module named 'gdspy'\n"
+    },
+    {
+      "name": "solve-cw.py",
+      "status": "FAIL",
+      "time": 6.69,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/solve-cw.py\", line 80, in <module>\n    dtype=np.complex_,\n          ^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/__init__.py\", line 778, in __getattr__\n    raise AttributeError(\n    ...<3 lines>...\n    )\nAttributeError: `np.complex_` was removed in the NumPy 2.0 release. Use `np.complex128` instead.\n"
+    },
+    {
+      "name": "stochastic_emitter.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "stochastic_emitter_line.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "stochastic_emitter_reciprocity.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "straight-waveguide.py",
+      "status": "PASS",
+      "time": 8.97,
+      "error": ""
+    },
+    {
+      "name": "waveguide_crossing.py",
+      "status": "FAIL",
+      "time": 13.94,
+      "error": "    )\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 558, in __init__\n    super().__init__(src, component, center, volume, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 127, in __init__\n    self.amplitude = complex(amplitude)\n                     ~~~~~~~^^^^^^^^^^^\nTypeError: only 0-dimensional arrays can be converted to Python scalars\n"
+    },
+    {
+      "name": "wvg-src.py",
+      "status": "FAIL",
+      "time": 11.35,
+      "error": "                   ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'h5topng'\n"
+    },
+    {
+      "name": "zone_plate.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_levelset.py",
+      "status": "FAIL",
+      "time": 93.67,
+      "error": "    )\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 558, in __init__\n    super().__init__(src, component, center, volume, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 127, in __init__\n    self.amplitude = complex(amplitude)\n                     ~~~~~~~^^^^^^^^^^^\nTypeError: only 0-dimensional arrays can be converted to Python scalars\n"
+    },
+    {
+      "name": "mode_converter.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "multilayer_opt.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_3rd_harm_1d.py",
+      "status": "PASS",
+      "time": 4.25,
+      "error": ""
+    },
+    {
+      "name": "test_absorber_1d.py",
+      "status": "PASS",
+      "time": 17.56,
+      "error": ""
+    },
+    {
+      "name": "test_adjoint_cyl.py",
+      "status": "FAIL",
+      "time": 8.39,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_cyl.py\", line 15, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_adjoint_jax.py",
+      "status": "FAIL",
+      "time": 0.52,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_jax.py\", line 3, in <module>\n    import jax\nModuleNotFoundError: No module named 'jax'\n"
+    },
+    {
+      "name": "test_adjoint_solver.py",
+      "status": "TIMEOUT",
+      "time": 300.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_adjoint_utils.py",
+      "status": "FAIL",
+      "time": 10.45,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_utils.py\", line 19, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_antenna_radiation.py",
+      "status": "TIMEOUT",
+      "time": 300.12,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_array_metadata.py",
+      "status": "TIMEOUT",
+      "time": 300.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_bend_flux.py",
+      "status": "PASS",
+      "time": 61.69,
+      "error": ""
+    },
+    {
+      "name": "test_binary_grating.py",
+      "status": "FAIL",
+      "time": 1.22,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_binary_grating.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_binary_partition_utils.py",
+      "status": "FAIL",
+      "time": 9.09,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_binary_partition_utils.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_boundaries_1D.py",
+      "status": "PASS",
+      "time": 106.44,
+      "error": ""
+    },
+    {
+      "name": "test_cavity_arrayslice.py",
+      "status": "PASS",
+      "time": 27.26,
+      "error": ""
+    },
+    {
+      "name": "test_cavity_farfield.py",
+      "status": "PASS",
+      "time": 18.8,
+      "error": ""
+    },
+    {
+      "name": "test_chunk_balancer.py",
+      "status": "FAIL",
+      "time": 7.58,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_chunk_balancer.py\", line 5, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_chunk_layout.py",
+      "status": "PASS",
+      "time": 4.99,
+      "error": ""
+    },
+    {
+      "name": "test_chunks.py",
+      "status": "PASS",
+      "time": 12.64,
+      "error": ""
+    },
+    {
+      "name": "test_conductivity.py",
+      "status": "PASS",
+      "time": 97.6,
+      "error": ""
+    },
+    {
+      "name": "test_cyl_ellipsoid.py",
+      "status": "PASS",
+      "time": 179.73,
+      "error": ""
+    },
+    {
+      "name": "test_dft_energy.py",
+      "status": "PASS",
+      "time": 16.97,
+      "error": ""
+    },
+    {
+      "name": "test_dft_fields.py",
+      "status": "PASS",
+      "time": 29.11,
+      "error": ""
+    },
+    {
+      "name": "test_diffracted_planewave.py",
+      "status": "PASS",
+      "time": 207.05,
+      "error": ""
+    },
+    {
+      "name": "test_dispersive_eigenmode.py",
+      "status": "PASS",
+      "time": 36.59,
+      "error": ""
+    },
+    {
+      "name": "test_divide_mpi_processes.py",
+      "status": "PASS",
+      "time": 6.99,
+      "error": ""
+    },
+    {
+      "name": "test_dump_load.py",
+      "status": "TIMEOUT",
+      "time": 300.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_eigfreq.py",
+      "status": "TIMEOUT",
+      "time": 300.12,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_faraday_rotation.py",
+      "status": "PASS",
+      "time": 9.09,
+      "error": ""
+    },
+    {
+      "name": "test_field_functions.py",
+      "status": "PASS",
+      "time": 12.27,
+      "error": ""
+    },
+    {
+      "name": "test_force.py",
+      "status": "PASS",
+      "time": 11.52,
+      "error": ""
+    },
+    {
+      "name": "test_fragment_stats.py",
+      "status": "PASS",
+      "time": 6.69,
+      "error": ""
+    },
+    {
+      "name": "test_gaussianbeam.py",
+      "status": "PASS",
+      "time": 58.16,
+      "error": ""
+    },
+    {
+      "name": "test_geom.py",
+      "status": "PASS",
+      "time": 7.97,
+      "error": ""
+    },
+    {
+      "name": "test_get_epsilon_grid.py",
+      "status": "FAIL",
+      "time": 7.29,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_get_epsilon_grid.py\", line 5, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_get_point.py",
+      "status": "PASS",
+      "time": 3.69,
+      "error": ""
+    },
+    {
+      "name": "test_holey_wvg_bands.py",
+      "status": "PASS",
+      "time": 61.33,
+      "error": ""
+    },
+    {
+      "name": "test_holey_wvg_cavity.py",
+      "status": "PASS",
+      "time": 22.55,
+      "error": ""
+    },
+    {
+      "name": "test_integrated_source.py",
+      "status": "PASS",
+      "time": 6.33,
+      "error": ""
+    },
+    {
+      "name": "test_kdom.py",
+      "status": "PASS",
+      "time": 12.16,
+      "error": ""
+    },
+    {
+      "name": "test_ldos.py",
+      "status": "TIMEOUT",
+      "time": 300.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_material_dispersion.py",
+      "status": "PASS",
+      "time": 102.51,
+      "error": ""
+    },
+    {
+      "name": "test_material_grid.py",
+      "status": "TIMEOUT",
+      "time": 300.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_materials_library.py",
+      "status": "PASS",
+      "time": 20.96,
+      "error": ""
+    },
+    {
+      "name": "test_medium_evaluations.py",
+      "status": "PASS",
+      "time": 12.02,
+      "error": ""
+    },
+    {
+      "name": "test_mode_coeffs.py",
+      "status": "PASS",
+      "time": 183.49,
+      "error": ""
+    },
+    {
+      "name": "test_mode_decomposition.py",
+      "status": "FAIL",
+      "time": 0.34,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_mode_decomposition.py\", line 4, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_mpb.py",
+      "status": "TIMEOUT",
+      "time": 300.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_multilevel_atom.py",
+      "status": "PASS",
+      "time": 33.11,
+      "error": ""
+    },
+    {
+      "name": "test_n2f_periodic.py",
+      "status": "PASS",
+      "time": 276.29,
+      "error": ""
+    },
+    {
+      "name": "test_oblique_source.py",
+      "status": "TIMEOUT",
+      "time": 300.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_physical.py",
+      "status": "PASS",
+      "time": 16.76,
+      "error": ""
+    },
+    {
+      "name": "test_planewave_1D.py",
+      "status": "TIMEOUT",
+      "time": 300.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_pml_cyl.py",
+      "status": "FAIL",
+      "time": 0.52,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_pml_cyl.py\", line 2, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_prism.py",
+      "status": "PASS",
+      "time": 183.89,
+      "error": ""
+    },
+    {
+      "name": "test_pw_source.py",
+      "status": "PASS",
+      "time": 8.53,
+      "error": ""
+    },
+    {
+      "name": "test_refl_angular.py",
+      "status": "FAIL",
+      "time": 1.01,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_refl_angular.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_ring.py",
+      "status": "PASS",
+      "time": 40.41,
+      "error": ""
+    },
+    {
+      "name": "test_ring_cyl.py",
+      "status": "PASS",
+      "time": 7.86,
+      "error": ""
+    },
+    {
+      "name": "test_simulation.py",
+      "status": "PASS",
+      "time": 33.3,
+      "error": ""
+    },
+    {
+      "name": "test_source.py",
+      "status": "PASS",
+      "time": 18.89,
+      "error": ""
+    },
+    {
+      "name": "test_special_kz.py",
+      "status": "FAIL",
+      "time": 0.39,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_special_kz.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_timing_measurements.py",
+      "status": "PASS",
+      "time": 4.31,
+      "error": ""
+    },
+    {
+      "name": "test_user_defined_material.py",
+      "status": "PASS",
+      "time": 4.5,
+      "error": ""
+    },
+    {
+      "name": "test_verbosity_mgr.py",
+      "status": "PASS",
+      "time": 3.55,
+      "error": ""
+    },
+    {
+      "name": "test_visualization.py",
+      "status": "PASS",
+      "time": 8.28,
+      "error": ""
+    },
+    {
+      "name": "test_wvg_src.py",
+      "status": "PASS",
+      "time": 7.04,
+      "error": ""
+    }
+  ]
+}

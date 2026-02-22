@@ -1,6 +1,6 @@
 ![](doc/docs/images/Meep-banner.png)
 
-> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork enhances the original project with comprehensive documentation including a detailed [Architecture Guide](docs/ARCHITECTURE.md), a step-by-step [Developer Guide](docs/DEVELOPER_GUIDE.md), and an extensive [User Guide](docs/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions. All original source code remains unchanged.
+> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork enhances the original project with comprehensive documentation including a detailed [Architecture Guide](guides/ARCHITECTURE.md), a step-by-step [Developer Guide](guides/DEVELOPER_GUIDE.md), and an extensive [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions. All original source code remains unchanged.
 
 [![CI](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml)
 [![Sanitizers](https://github.com/NanoComp/meep/actions/workflows/build-san.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-san.yml)
@@ -35,7 +35,7 @@
 
 ### Installation via Conda
 
-The fastest way to get started on Linux or macOS is through the `conda-forge` channel (Windows users: install via [WSL2](docs/USER_GUIDE.md)):
+The fastest way to get started on Linux or macOS is through the `conda-forge` channel (Windows users: install via [WSL2](guides/USER_GUIDE.md)):
 
 ```bash
 conda create -n mp -c conda-forge pymeep
@@ -101,10 +101,11 @@ For more examples and step-by-step tutorials, see the [online manual](https://me
 
 | Resource | Description |
 |---|---|
-| [docs/QUICKSTART_EXPLAINED.md](docs/QUICKSTART_EXPLAINED.md) | Quick Start Explained: physics, simulation setup, and results walkthrough |
-| [docs/USER_GUIDE.md](docs/USER_GUIDE.md) | User Guide: installation, tutorials, and 10 worked use cases |
-| [docs/DEVELOPER_GUIDE.md](docs/DEVELOPER_GUIDE.md) | Developer Guide: building from source, testing, and contributing |
-| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Architecture Documentation: system design, diagrams, and code reference |
+| [guides/QUICKSTART_EXPLAINED.md](guides/QUICKSTART_EXPLAINED.md) | Quick Start Explained: physics, simulation setup, and results walkthrough |
+| [guides/USER_GUIDE.md](guides/USER_GUIDE.md) | User Guide: installation, tutorials, and 10 worked use cases |
+| [guides/DEVELOPER_GUIDE.md](guides/DEVELOPER_GUIDE.md) | Developer Guide: building from source, testing, and contributing |
+| [guides/ARCHITECTURE.md](guides/ARCHITECTURE.md) | Architecture Documentation: system design, diagrams, and code reference |
+| [guides/TEST_REPORT.md](guides/TEST_REPORT.md) | Test Report: results from running all 148 Python examples and tests |
 | [CLAUDE.md](CLAUDE.md) | AI Assistant Guide: instructions for Claude Code |
 | [Online Manual](https://meep.readthedocs.io/en/latest) | Full documentation on Read the Docs |
 
@@ -114,7 +115,7 @@ For more examples and step-by-step tutorials, see the [online manual](https://me
 |---|---|---|
 | Linux | Full | Install via Conda or build from source |
 | macOS | Full | Install via Conda or build from source |
-| Windows | Via WSL2 or Docker | No native Conda package — see [USER_GUIDE.md](docs/USER_GUIDE.md) for setup instructions |
+| Windows | Via WSL2 or Docker | No native Conda package — see [USER_GUIDE.md](guides/USER_GUIDE.md) for setup instructions |
 
 Conda packages are the recommended path for new users on Linux and macOS. Windows users should use WSL2 (Ubuntu) or Docker. Building from source gives the most flexibility for advanced configurations (MPI, custom prefix, debug builds).
 
@@ -130,7 +131,7 @@ make -j$(nproc)
 make check
 ```
 
-Full instructions including dependency installation, configure options, and CI build details are in [docs/DEVELOPER_GUIDE.md](docs/DEVELOPER_GUIDE.md).
+Full instructions including dependency installation, configure options, and CI build details are in [guides/DEVELOPER_GUIDE.md](guides/DEVELOPER_GUIDE.md).
 
 ## Project Structure
 
@@ -140,7 +141,7 @@ python/      - Python interface and SWIG bindings
 scheme/      - Scheme/Guile interface
 tests/       - C++ test suite
 libpympb/    - Python MPB eigenmode solver bindings
-docs/        - Documentation
+guides/      - Project guides (architecture, developer, user, test report)
 ```
 
 ## Citing Meep

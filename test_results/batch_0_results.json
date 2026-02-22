@@ -1,0 +1,187 @@
+{
+  "batch": "0",
+  "results": [
+    {
+      "name": "3rd-harm-1d.py",
+      "status": "PASS",
+      "time": 118.53,
+      "error": ""
+    },
+    {
+      "name": "absorbed_power_density.py",
+      "status": "TIMEOUT",
+      "time": 180.08,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "absorber-1d.py",
+      "status": "PASS",
+      "time": 10.72,
+      "error": ""
+    },
+    {
+      "name": "antenna-radiation.py",
+      "status": "FAIL",
+      "time": 50.45,
+      "error": "s/simon/Downloads/meep-master/python/examples/antenna-radiation.py\", line 177, in antenna_radiation_pattern\n    flux_radiation_pattern = np.trapz(radial_flux * FARFIELD_RADIUS_UM, x=polar_rad)\n                             ^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/__init__.py\", line 792, in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nAttributeError: module 'numpy' has no attribute 'trapz'. Did you mean: 'trace'?\n"
+    },
+    {
+      "name": "antenna_pec_ground_plane.py",
+      "status": "PASS",
+      "time": 145.6,
+      "error": ""
+    },
+    {
+      "name": "antenna_pec_ground_plane_1D.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "bend-flux.py",
+      "status": "PASS",
+      "time": 30.9,
+      "error": ""
+    },
+    {
+      "name": "bent-waveguide.py",
+      "status": "PASS",
+      "time": 18.59,
+      "error": ""
+    },
+    {
+      "name": "binary_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_n2f.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_oblique.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_phasemap.py",
+      "status": "PASS",
+      "time": 74.11,
+      "error": ""
+    },
+    {
+      "name": "cavity-farfield.py",
+      "status": "TIMEOUT",
+      "time": 180.1,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "cavity_arrayslice.py",
+      "status": "FAIL",
+      "time": 11.81,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/cavity_arrayslice.py\", line 52, in <module>\n    slice1d = sim.get_array(mp.Volume(center_1d, size=size_1d), component=mp.Hz)\nTypeError: Simulation.get_array() got multiple values for argument 'component'\n"
+    },
+    {
+      "name": "cherenkov-radiation.py",
+      "status": "FAIL",
+      "time": 11.45,
+      "error": "                   ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'h5topng'\n"
+    },
+    {
+      "name": "chirped_pulse.py",
+      "status": "PASS",
+      "time": 117.37,
+      "error": ""
+    },
+    {
+      "name": "coupler.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "cyl-ellipsoid.py",
+      "status": "PASS",
+      "time": 116.38,
+      "error": ""
+    },
+    {
+      "name": "cylinder_cross_section.py",
+      "status": "PASS",
+      "time": 61.66,
+      "error": ""
+    },
+    {
+      "name": "differential_cross_section.py",
+      "status": "TIMEOUT",
+      "time": 180.24,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "diffracted_planewave.py",
+      "status": "PASS",
+      "time": 157.17,
+      "error": ""
+    },
+    {
+      "name": "dipole_in_vacuum_1D.py",
+      "status": "FAIL",
+      "time": 1.89,
+      "error": "usage: dipole_in_vacuum_1D.py [-h] {x,y}\ndipole_in_vacuum_1D.py: error: the following arguments are required: dipole_pol\n"
+    },
+    {
+      "name": "dipole_in_vacuum_cyl_off_axis.py",
+      "status": "FAIL",
+      "time": 2.6,
+      "error": "usage: dipole_in_vacuum_cyl_off_axis.py [-h] {x,y} dipole_pos_r\ndipole_in_vacuum_cyl_off_axis.py: error: the following arguments are required: dipole_pol, dipole_pos_r\n"
+    },
+    {
+      "name": "dipole_in_vacuum_cyl_on_axis.py",
+      "status": "FAIL",
+      "time": 2.05,
+      "error": "usage: dipole_in_vacuum_cyl_on_axis.py [-h] {x,z}\ndipole_in_vacuum_cyl_on_axis.py: error: the following arguments are required: dipole_pol\n"
+    },
+    {
+      "name": "disc_extraction_efficiency.py",
+      "status": "TIMEOUT",
+      "time": 180.02,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "disc_radiation_pattern.py",
+      "status": "TIMEOUT",
+      "time": 180.02,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "eps_fit_lorentzian.py",
+      "status": "FAIL",
+      "time": 1.95,
+      "error": "ource.open(fname, 'rt', encoding=encoding)\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_datasource.py\", line 192, in open\n    return ds.open(path, mode, encoding=encoding, newline=newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_datasource.py\", line 529, in open\n    raise FileNotFoundError(f\"{path} not found.\")\nFileNotFoundError: mymaterial.csv not found.\n"
+    },
+    {
+      "name": "extraction_eff_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "faraday-rotation.py",
+      "status": "PASS",
+      "time": 3.19,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "total": 29,
+    "passed": 11,
+    "failed": 7,
+    "timeout": 11,
+    "errors": 0,
+    "total_time": 2917.4
+  }
+}

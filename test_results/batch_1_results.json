@@ -1,0 +1,187 @@
+{
+  "batch": "1",
+  "results": [
+    {
+      "name": "finite_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "gaussian-beam.py",
+      "status": "PASS",
+      "time": 95.44,
+      "error": ""
+    },
+    {
+      "name": "grating2d_triangular_lattice.py",
+      "status": "TIMEOUT",
+      "time": 180.48,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "holey-wvg-bands.py",
+      "status": "TIMEOUT",
+      "time": 180.19,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "holey-wvg-cavity.py",
+      "status": "PASS",
+      "time": 46.51,
+      "error": ""
+    },
+    {
+      "name": "material-dispersion.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "metal-cavity-ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "metasurface_lens.py",
+      "status": "TIMEOUT",
+      "time": 180.11,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mie_scattering.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mode-decomposition.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mode_coeff_phase.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_bragg.py",
+      "status": "PASS",
+      "time": 7.86,
+      "error": ""
+    },
+    {
+      "name": "mpb_bragg_sine.py",
+      "status": "PASS",
+      "time": 6.03,
+      "error": ""
+    },
+    {
+      "name": "mpb_data_analysis.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_diamond.py",
+      "status": "PASS",
+      "time": 117.0,
+      "error": ""
+    },
+    {
+      "name": "mpb_hole_slab.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_honey_rods.py",
+      "status": "PASS",
+      "time": 35.36,
+      "error": ""
+    },
+    {
+      "name": "mpb_line_defect.py",
+      "status": "FAIL",
+      "time": 3.25,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/mpb_line_defect.py\", line 67, in <module>\n    main()\n    ~~~~^^\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/mpb_line_defect.py\", line 61, in main\n    ms.fix_efield_phase,\n    ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'ModeSolver' object has no attribute 'fix_efield_phase'. Did you mean: 'fix_field_phase'?\n"
+    },
+    {
+      "name": "mpb_sq_rods.py",
+      "status": "PASS",
+      "time": 26.42,
+      "error": ""
+    },
+    {
+      "name": "mpb_strip.py",
+      "status": "PASS",
+      "time": 16.3,
+      "error": ""
+    },
+    {
+      "name": "mpb_tri_holes.py",
+      "status": "PASS",
+      "time": 14.54,
+      "error": ""
+    },
+    {
+      "name": "mpb_tri_rods.py",
+      "status": "PASS",
+      "time": 14.98,
+      "error": ""
+    },
+    {
+      "name": "mpb_tutorial.py",
+      "status": "TIMEOUT",
+      "time": 180.03,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "multilevel-atom.py",
+      "status": "TIMEOUT",
+      "time": 180.03,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "oblique-planewave.py",
+      "status": "PASS",
+      "time": 26.71,
+      "error": ""
+    },
+    {
+      "name": "oblique-source.py",
+      "status": "TIMEOUT",
+      "time": 180.02,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "parallel-wvgs-force.py",
+      "status": "TIMEOUT",
+      "time": 180.03,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "parallel-wvgs-mpb.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "perturbation_theory.py",
+      "status": "PASS",
+      "time": 66.24,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "total": 29,
+    "passed": 12,
+    "failed": 1,
+    "timeout": 16,
+    "errors": 0,
+    "total_time": 3358.2
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "batch": "2",
+  "results": [
+    {
+      "name": "perturbation_theory_2d.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "phase_in_material.py",
+      "status": "PASS",
+      "time": 7.66,
+      "error": ""
+    },
+    {
+      "name": "planar_cavity_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.08,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "plot_radiation_pattern_dipole.py",
+      "status": "FAIL",
+      "time": 8.8,
+      "error": "l last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/plot_radiation_pattern_dipole.py\", line 132, in <module>\n    data = np.load(\"dipole_radiation_pattern.npz\")\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_npyio_impl.py\", line 454, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\n                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'dipole_radiation_pattern.npz'\n"
+    },
+    {
+      "name": "point_dipole_cyl.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "polarization_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "pw-source.py",
+      "status": "PASS",
+      "time": 13.93,
+      "error": ""
+    },
+    {
+      "name": "refl-angular-kz2d.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "refl-angular.py",
+      "status": "PASS",
+      "time": 18.92,
+      "error": ""
+    },
+    {
+      "name": "refl-quartz.py",
+      "status": "PASS",
+      "time": 14.21,
+      "error": ""
+    },
+    {
+      "name": "ring-cyl.py",
+      "status": "PASS",
+      "time": 20.03,
+      "error": ""
+    },
+    {
+      "name": "ring-mode-overlap.py",
+      "status": "TIMEOUT",
+      "time": 180.12,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "ring.py",
+      "status": "PASS",
+      "time": 20.48,
+      "error": ""
+    },
+    {
+      "name": "ring_gds.py",
+      "status": "FAIL",
+      "time": 0.46,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/ring_gds.py\", line 3, in <module>\n    import gdspy\nModuleNotFoundError: No module named 'gdspy'\n"
+    },
+    {
+      "name": "solve-cw.py",
+      "status": "FAIL",
+      "time": 7.05,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/solve-cw.py\", line 80, in <module>\n    dtype=np.complex_,\n          ^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/__init__.py\", line 778, in __getattr__\n    raise AttributeError(\n    ...<3 lines>...\n    )\nAttributeError: `np.complex_` was removed in the NumPy 2.0 release. Use `np.complex128` instead.\n"
+    },
+    {
+      "name": "stochastic_emitter.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "stochastic_emitter_line.py",
+      "status": "TIMEOUT",
+      "time": 180.16,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "stochastic_emitter_reciprocity.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "straight-waveguide.py",
+      "status": "PASS",
+      "time": 9.18,
+      "error": ""
+    },
+    {
+      "name": "waveguide_crossing.py",
+      "status": "FAIL",
+      "time": 16.15,
+      "error": "    )\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 558, in __init__\n    super().__init__(src, component, center, volume, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/meep/source.py\", line 127, in __init__\n    self.amplitude = complex(amplitude)\n                     ~~~~~~~^^^^^^^^^^^\nTypeError: only 0-dimensional arrays can be converted to Python scalars\n"
+    },
+    {
+      "name": "wvg-src.py",
+      "status": "FAIL",
+      "time": 15.61,
+      "error": "                   ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'h5topng'\n"
+    },
+    {
+      "name": "zone_plate.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_3rd_harm_1d.py",
+      "status": "PASS",
+      "time": 13.07,
+      "error": ""
+    },
+    {
+      "name": "test_absorber_1d.py",
+      "status": "PASS",
+      "time": 40.85,
+      "error": ""
+    },
+    {
+      "name": "test_adjoint_cyl.py",
+      "status": "FAIL",
+      "time": 9.36,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_cyl.py\", line 15, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_adjoint_jax.py",
+      "status": "FAIL",
+      "time": 0.88,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_jax.py\", line 3, in <module>\n    import jax\nModuleNotFoundError: No module named 'jax'\n"
+    },
+    {
+      "name": "test_adjoint_solver.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_adjoint_utils.py",
+      "status": "FAIL",
+      "time": 10.05,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_adjoint_utils.py\", line 19, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_antenna_radiation.py",
+      "status": "PASS",
+      "time": 156.29,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "total": 29,
+    "passed": 10,
+    "failed": 8,
+    "timeout": 11,
+    "errors": 0,
+    "total_time": 2364.0
+  }
+}

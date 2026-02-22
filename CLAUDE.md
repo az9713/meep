@@ -123,7 +123,9 @@ GitHub Actions (`.github/workflows/build-ci.yml`): Tests Python 3.9 and 3.11, wi
 
 ## Documentation
 
-- `docs/ARCHITECTURE.md` — System architecture with ASCII diagrams, data flows, and code references
-- `docs/DEVELOPER_GUIDE.md` — Step-by-step build, test, and contribution guide for new developers
-- `docs/USER_GUIDE.md` — Installation (including Windows), tutorials, and 10 educational use cases
+- `guides/ARCHITECTURE.md` — System architecture with ASCII diagrams, data flows, and code references
+- `guides/DEVELOPER_GUIDE.md` — Step-by-step build, test, and contribution guide for new developers
+- `guides/USER_GUIDE.md` — Installation (including Windows), tutorials, and 10 educational use cases
+- `guides/QUICKSTART_EXPLAINED.md` — Detailed walkthrough of the Quick Start example
+- `guides/TEST_REPORT.md` — Results from running all 148 Python examples and tests
 - [Online Manual](https://meep.readthedocs.io/en/latest) — Full reference documentation

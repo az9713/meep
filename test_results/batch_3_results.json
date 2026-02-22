@@ -1,0 +1,187 @@
+{
+  "batch": "3",
+  "results": [
+    {
+      "name": "test_array_metadata.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_bend_flux.py",
+      "status": "PASS",
+      "time": 63.45,
+      "error": ""
+    },
+    {
+      "name": "test_binary_grating.py",
+      "status": "FAIL",
+      "time": 1.56,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_binary_grating.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_binary_partition_utils.py",
+      "status": "FAIL",
+      "time": 7.7,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_binary_partition_utils.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_boundaries_1D.py",
+      "status": "PASS",
+      "time": 125.82,
+      "error": ""
+    },
+    {
+      "name": "test_cavity_arrayslice.py",
+      "status": "PASS",
+      "time": 41.95,
+      "error": ""
+    },
+    {
+      "name": "test_cavity_farfield.py",
+      "status": "PASS",
+      "time": 21.65,
+      "error": ""
+    },
+    {
+      "name": "test_chunk_balancer.py",
+      "status": "FAIL",
+      "time": 14.41,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_chunk_balancer.py\", line 5, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_chunk_layout.py",
+      "status": "PASS",
+      "time": 8.73,
+      "error": ""
+    },
+    {
+      "name": "test_chunks.py",
+      "status": "PASS",
+      "time": 22.8,
+      "error": ""
+    },
+    {
+      "name": "test_conductivity.py",
+      "status": "PASS",
+      "time": 172.78,
+      "error": ""
+    },
+    {
+      "name": "test_cyl_ellipsoid.py",
+      "status": "PASS",
+      "time": 170.16,
+      "error": ""
+    },
+    {
+      "name": "test_dft_energy.py",
+      "status": "PASS",
+      "time": 15.17,
+      "error": ""
+    },
+    {
+      "name": "test_dft_fields.py",
+      "status": "PASS",
+      "time": 19.97,
+      "error": ""
+    },
+    {
+      "name": "test_diffracted_planewave.py",
+      "status": "PASS",
+      "time": 134.93,
+      "error": ""
+    },
+    {
+      "name": "test_dispersive_eigenmode.py",
+      "status": "PASS",
+      "time": 57.59,
+      "error": ""
+    },
+    {
+      "name": "test_divide_mpi_processes.py",
+      "status": "PASS",
+      "time": 7.83,
+      "error": ""
+    },
+    {
+      "name": "test_dump_load.py",
+      "status": "TIMEOUT",
+      "time": 180.11,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_eigfreq.py",
+      "status": "TIMEOUT",
+      "time": 180.18,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_faraday_rotation.py",
+      "status": "PASS",
+      "time": 12.45,
+      "error": ""
+    },
+    {
+      "name": "test_field_functions.py",
+      "status": "PASS",
+      "time": 14.05,
+      "error": ""
+    },
+    {
+      "name": "test_force.py",
+      "status": "PASS",
+      "time": 11.59,
+      "error": ""
+    },
+    {
+      "name": "test_fragment_stats.py",
+      "status": "PASS",
+      "time": 6.12,
+      "error": ""
+    },
+    {
+      "name": "test_gaussianbeam.py",
+      "status": "PASS",
+      "time": 90.27,
+      "error": ""
+    },
+    {
+      "name": "test_geom.py",
+      "status": "PASS",
+      "time": 7.74,
+      "error": ""
+    },
+    {
+      "name": "test_get_epsilon_grid.py",
+      "status": "FAIL",
+      "time": 9.72,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_get_epsilon_grid.py\", line 5, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_get_point.py",
+      "status": "PASS",
+      "time": 8.34,
+      "error": ""
+    },
+    {
+      "name": "test_holey_wvg_bands.py",
+      "status": "PASS",
+      "time": 105.74,
+      "error": ""
+    },
+    {
+      "name": "test_holey_wvg_cavity.py",
+      "status": "PASS",
+      "time": 43.77,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "total": 29,
+    "passed": 22,
+    "failed": 4,
+    "timeout": 3,
+    "errors": 0,
+    "total_time": 1736.6
+  }
+}

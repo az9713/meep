@@ -1,0 +1,187 @@
+{
+  "batch": "4",
+  "results": [
+    {
+      "name": "test_integrated_source.py",
+      "status": "PASS",
+      "time": 7.25,
+      "error": ""
+    },
+    {
+      "name": "test_kdom.py",
+      "status": "PASS",
+      "time": 10.53,
+      "error": ""
+    },
+    {
+      "name": "test_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_material_dispersion.py",
+      "status": "PASS",
+      "time": 92.95,
+      "error": ""
+    },
+    {
+      "name": "test_material_grid.py",
+      "status": "TIMEOUT",
+      "time": 180.1,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_materials_library.py",
+      "status": "PASS",
+      "time": 11.44,
+      "error": ""
+    },
+    {
+      "name": "test_medium_evaluations.py",
+      "status": "PASS",
+      "time": 11.52,
+      "error": ""
+    },
+    {
+      "name": "test_mode_coeffs.py",
+      "status": "TIMEOUT",
+      "time": 180.12,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_mode_decomposition.py",
+      "status": "FAIL",
+      "time": 0.65,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_mode_decomposition.py\", line 4, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_mpb.py",
+      "status": "TIMEOUT",
+      "time": 180.04,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_multilevel_atom.py",
+      "status": "PASS",
+      "time": 45.24,
+      "error": ""
+    },
+    {
+      "name": "test_n2f_periodic.py",
+      "status": "TIMEOUT",
+      "time": 180.14,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_oblique_source.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_physical.py",
+      "status": "PASS",
+      "time": 11.84,
+      "error": ""
+    },
+    {
+      "name": "test_planewave_1D.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_pml_cyl.py",
+      "status": "FAIL",
+      "time": 0.54,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_pml_cyl.py\", line 2, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_prism.py",
+      "status": "TIMEOUT",
+      "time": 180.33,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "test_pw_source.py",
+      "status": "PASS",
+      "time": 12.28,
+      "error": ""
+    },
+    {
+      "name": "test_refl_angular.py",
+      "status": "FAIL",
+      "time": 1.31,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_refl_angular.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_ring.py",
+      "status": "PASS",
+      "time": 65.09,
+      "error": ""
+    },
+    {
+      "name": "test_ring_cyl.py",
+      "status": "PASS",
+      "time": 15.2,
+      "error": ""
+    },
+    {
+      "name": "test_simulation.py",
+      "status": "PASS",
+      "time": 46.02,
+      "error": ""
+    },
+    {
+      "name": "test_source.py",
+      "status": "PASS",
+      "time": 42.13,
+      "error": ""
+    },
+    {
+      "name": "test_special_kz.py",
+      "status": "FAIL",
+      "time": 0.89,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/tests/test_special_kz.py\", line 6, in <module>\n    import parameterized\nModuleNotFoundError: No module named 'parameterized'\n"
+    },
+    {
+      "name": "test_timing_measurements.py",
+      "status": "PASS",
+      "time": 14.02,
+      "error": ""
+    },
+    {
+      "name": "test_user_defined_material.py",
+      "status": "PASS",
+      "time": 16.11,
+      "error": ""
+    },
+    {
+      "name": "test_verbosity_mgr.py",
+      "status": "PASS",
+      "time": 8.93,
+      "error": ""
+    },
+    {
+      "name": "test_visualization.py",
+      "status": "PASS",
+      "time": 22.04,
+      "error": ""
+    },
+    {
+      "name": "test_wvg_src.py",
+      "status": "PASS",
+      "time": 17.02,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "total": 29,
+    "passed": 17,
+    "failed": 4,
+    "timeout": 8,
+    "errors": 0,
+    "total_time": 1894.0
+  }
+}

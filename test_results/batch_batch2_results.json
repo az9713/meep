@@ -1,0 +1,133 @@
+{
+  "batch": "batch2",
+  "results": [
+    {
+      "name": "diffracted_planewave.py",
+      "status": "PASS",
+      "time": 148.64,
+      "error": ""
+    },
+    {
+      "name": "dipole_in_vacuum_1D.py",
+      "status": "FAIL",
+      "time": 4.34,
+      "error": "usage: dipole_in_vacuum_1D.py [-h] {x,y}\ndipole_in_vacuum_1D.py: error: the following arguments are required: dipole_pol\n"
+    },
+    {
+      "name": "dipole_in_vacuum_cyl_off_axis.py",
+      "status": "FAIL",
+      "time": 3.67,
+      "error": "usage: dipole_in_vacuum_cyl_off_axis.py [-h] {x,y} dipole_pos_r\ndipole_in_vacuum_cyl_off_axis.py: error: the following arguments are required: dipole_pol, dipole_pos_r\n"
+    },
+    {
+      "name": "dipole_in_vacuum_cyl_on_axis.py",
+      "status": "FAIL",
+      "time": 4.42,
+      "error": "usage: dipole_in_vacuum_cyl_on_axis.py [-h] {x,z}\ndipole_in_vacuum_cyl_on_axis.py: error: the following arguments are required: dipole_pol\n"
+    },
+    {
+      "name": "disc_extraction_efficiency.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "disc_radiation_pattern.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "eps_fit_lorentzian.py",
+      "status": "FAIL",
+      "time": 7.14,
+      "error": "ource.open(fname, 'rt', encoding=encoding)\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_datasource.py\", line 192, in open\n    return ds.open(path, mode, encoding=encoding, newline=newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/lib/_datasource.py\", line 529, in open\n    raise FileNotFoundError(f\"{path} not found.\")\nFileNotFoundError: mymaterial.csv not found.\n"
+    },
+    {
+      "name": "extraction_eff_ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "faraday-rotation.py",
+      "status": "PASS",
+      "time": 21.19,
+      "error": ""
+    },
+    {
+      "name": "finite_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "gaussian-beam.py",
+      "status": "PASS",
+      "time": 68.32,
+      "error": ""
+    },
+    {
+      "name": "grating2d_triangular_lattice.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "holey-wvg-bands.py",
+      "status": "TIMEOUT",
+      "time": 180.17,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "holey-wvg-cavity.py",
+      "status": "PASS",
+      "time": 35.82,
+      "error": ""
+    },
+    {
+      "name": "material-dispersion.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "metal-cavity-ldos.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "metasurface_lens.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mie_scattering.py",
+      "status": "TIMEOUT",
+      "time": 180.51,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mode-decomposition.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mode_coeff_phase.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    }
+  ],
+  "summary": {
+    "total": 20,
+    "passed": 4,
+    "failed": 4,
+    "timeout": 12,
+    "errors": 0,
+    "total_time": 2455.2
+  }
+}

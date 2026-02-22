@@ -1,0 +1,133 @@
+{
+  "batch": "batch1",
+  "results": [
+    {
+      "name": "3rd-harm-1d.py",
+      "status": "PASS",
+      "time": 35.69,
+      "error": ""
+    },
+    {
+      "name": "absorbed_power_density.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "absorber-1d.py",
+      "status": "PASS",
+      "time": 5.52,
+      "error": ""
+    },
+    {
+      "name": "antenna-radiation.py",
+      "status": "FAIL",
+      "time": 39.04,
+      "error": "s/simon/Downloads/meep-master/python/examples/antenna-radiation.py\", line 177, in antenna_radiation_pattern\n    flux_radiation_pattern = np.trapz(radial_flux * FARFIELD_RADIUS_UM, x=polar_rad)\n                             ^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/site-packages/numpy/__init__.py\", line 792, in __getattr__\n    raise AttributeError(f\"module {__name__!r} has no attribute {attr!r}\")\nAttributeError: module 'numpy' has no attribute 'trapz'. Did you mean: 'trace'?\n"
+    },
+    {
+      "name": "antenna_pec_ground_plane.py",
+      "status": "PASS",
+      "time": 128.23,
+      "error": ""
+    },
+    {
+      "name": "antenna_pec_ground_plane_1D.py",
+      "status": "TIMEOUT",
+      "time": 180.08,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "bend-flux.py",
+      "status": "PASS",
+      "time": 29.24,
+      "error": ""
+    },
+    {
+      "name": "bent-waveguide.py",
+      "status": "PASS",
+      "time": 18.41,
+      "error": ""
+    },
+    {
+      "name": "binary_grating.py",
+      "status": "TIMEOUT",
+      "time": 180.05,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_n2f.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_oblique.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "binary_grating_phasemap.py",
+      "status": "PASS",
+      "time": 135.45,
+      "error": ""
+    },
+    {
+      "name": "cavity-farfield.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "cavity_arrayslice.py",
+      "status": "FAIL",
+      "time": 15.51,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/cavity_arrayslice.py\", line 52, in <module>\n    slice1d = sim.get_array(mp.Volume(center_1d, size=size_1d), component=mp.Hz)\nTypeError: Simulation.get_array() got multiple values for argument 'component'\n"
+    },
+    {
+      "name": "cherenkov-radiation.py",
+      "status": "FAIL",
+      "time": 13.11,
+      "error": "                   ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/az9713/miniforge3/envs/mp/lib/python3.13/subprocess.py\", line 1991, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'h5topng'\n"
+    },
+    {
+      "name": "chirped_pulse.py",
+      "status": "PASS",
+      "time": 106.64,
+      "error": ""
+    },
+    {
+      "name": "coupler.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "cyl-ellipsoid.py",
+      "status": "PASS",
+      "time": 117.75,
+      "error": ""
+    },
+    {
+      "name": "cylinder_cross_section.py",
+      "status": "PASS",
+      "time": 94.21,
+      "error": ""
+    },
+    {
+      "name": "differential_cross_section.py",
+      "status": "TIMEOUT",
+      "time": 180.26,
+      "error": "exceeded timeout"
+    }
+  ],
+  "summary": {
+    "total": 20,
+    "passed": 9,
+    "failed": 3,
+    "timeout": 8,
+    "errors": 0,
+    "total_time": 2179.6
+  }
+}

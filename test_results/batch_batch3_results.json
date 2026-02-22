@@ -1,0 +1,133 @@
+{
+  "batch": "batch3",
+  "results": [
+    {
+      "name": "mpb_bragg.py",
+      "status": "PASS",
+      "time": 5.4,
+      "error": ""
+    },
+    {
+      "name": "mpb_bragg_sine.py",
+      "status": "PASS",
+      "time": 5.59,
+      "error": ""
+    },
+    {
+      "name": "mpb_data_analysis.py",
+      "status": "PASS",
+      "time": 123.89,
+      "error": ""
+    },
+    {
+      "name": "mpb_diamond.py",
+      "status": "PASS",
+      "time": 61.02,
+      "error": ""
+    },
+    {
+      "name": "mpb_hole_slab.py",
+      "status": "TIMEOUT",
+      "time": 180.06,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "mpb_honey_rods.py",
+      "status": "PASS",
+      "time": 103.59,
+      "error": ""
+    },
+    {
+      "name": "mpb_line_defect.py",
+      "status": "FAIL",
+      "time": 7.84,
+      "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/mpb_line_defect.py\", line 67, in <module>\n    main()\n    ~~~~^^\n  File \"/mnt/c/Users/simon/Downloads/meep-master/python/examples/mpb_line_defect.py\", line 61, in main\n    ms.fix_efield_phase,\n    ^^^^^^^^^^^^^^^^^^^\nAttributeError: 'ModeSolver' object has no attribute 'fix_efield_phase'. Did you mean: 'fix_field_phase'?\n"
+    },
+    {
+      "name": "mpb_sq_rods.py",
+      "status": "PASS",
+      "time": 83.06,
+      "error": ""
+    },
+    {
+      "name": "mpb_strip.py",
+      "status": "PASS",
+      "time": 58.61,
+      "error": ""
+    },
+    {
+      "name": "mpb_tri_holes.py",
+      "status": "PASS",
+      "time": 72.2,
+      "error": ""
+    },
+    {
+      "name": "mpb_tri_rods.py",
+      "status": "PASS",
+      "time": 99.73,
+      "error": ""
+    },
+    {
+      "name": "mpb_tutorial.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "multilevel-atom.py",
+      "status": "TIMEOUT",
+      "time": 180.13,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "oblique-planewave.py",
+      "status": "PASS",
+      "time": 110.04,
+      "error": ""
+    },
+    {
+      "name": "oblique-source.py",
+      "status": "TIMEOUT",
+      "time": 180.12,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "parallel-wvgs-force.py",
+      "status": "TIMEOUT",
+      "time": 180.09,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "parallel-wvgs-mpb.py",
+      "status": "TIMEOUT",
+      "time": 180.36,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "perturbation_theory.py",
+      "status": "TIMEOUT",
+      "time": 180.07,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "perturbation_theory_2d.py",
+      "status": "TIMEOUT",
+      "time": 180.31,
+      "error": "exceeded timeout"
+    },
+    {
+      "name": "phase_in_material.py",
+      "status": "PASS",
+      "time": 11.5,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "total": 20,
+    "passed": 11,
+    "failed": 1,
+    "timeout": 8,
+    "errors": 0,
+    "total_time": 2183.7
+  }
+}
