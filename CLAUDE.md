@@ -142,4 +142,5 @@ Full details in `guides/TEST_REPORT.md`. Summary of issues to be aware of when r
 - `guides/USER_GUIDE.md` — Installation (including Windows), tutorials, and 10 educational use cases
 - `guides/QUICKSTART_EXPLAINED.md` — Detailed walkthrough of the Quick Start example
 - `guides/TEST_REPORT.md` — Results from running all 148 Python examples and tests
+- `guides/CLOAK_SIMULATION_REPORT.md` — Spherical cow cloak: FDTD limitations, Yee grid stability analysis, and mitigation strategies
 - [Online Manual](https://meep.readthedocs.io/en/latest) — Full reference documentation
