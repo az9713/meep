@@ -366,4 +366,11 @@ This Quick Start example demonstrates the complete Meep workflow:
 
 Despite being only ~20 lines of Python, this simulation captures real electromagnetic physics: waveguiding by total internal reflection, pulse propagation and dispersion, and absorbing boundary conditions. The same workflow scales to 3D, to complex geometries, to frequency-domain analysis, and to inverse design optimization.
 
-For more tutorials, see the [Meep online manual](https://meep.readthedocs.io/en/latest/Python_Tutorials/Basics/).
+## See Also
+
+- [148 Physics Tutorials](tutorials/00_index.md) — Deep-dive theory and code walkthroughs for every Python example and test
+- [User Guide](USER_GUIDE.md) — Installation, tutorials, and 10 educational use cases
+- [Developer Guide](DEVELOPER_GUIDE.md) — Building from source, testing, and contributing
+- [Architecture Guide](ARCHITECTURE.md) — System design, diagrams, and code reference
+- [Test Report](TEST_REPORT.md) — Results from running all 148 Python examples and tests
+- [Meep Online Manual](https://meep.readthedocs.io/en/latest/Python_Tutorials/Basics/) — Full reference documentation

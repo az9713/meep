@@ -331,3 +331,14 @@ The complete batch result JSON files are archived in `test_results/`:
 - `test_results.json` (aggregated results)
 - `batch_0_output.txt` through `batch_4_output.txt` (console output)
 - `batch_runner.py`, `run_all_meep.py`, `run_parallel.sh` (runner scripts)
+
+---
+
+## See Also
+
+- [148 Physics Tutorials](tutorials/00_index.md) — Deep-dive theory and code walkthroughs for every Python example and test
+- [Quick Start Explained](QUICKSTART_EXPLAINED.md) — Physics, simulation setup, and results walkthrough
+- [User Guide](USER_GUIDE.md) — Installation, tutorials, and 10 educational use cases
+- [Developer Guide](DEVELOPER_GUIDE.md) — Building from source, testing, and contributing
+- [Architecture Guide](ARCHITECTURE.md) — System design, diagrams, and code reference
+- [Meep Online Manual](https://meep.readthedocs.io/en/latest) — Full reference documentation

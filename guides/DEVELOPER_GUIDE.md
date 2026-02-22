@@ -1651,6 +1651,15 @@ At verbosity 2, Meep prints detailed timing information for each step: how long 
 
 From C++, verbosity is controlled by `meep::verbosity` global variable in `adjust_verbosity.hpp`.
 
+## See Also
+
+- [148 Physics Tutorials](tutorials/00_index.md) — Deep-dive theory and code walkthroughs for every Python example and test
+- [Architecture Guide](ARCHITECTURE.md) — System design, ASCII diagrams, data flows, and code reference
+- [User Guide](USER_GUIDE.md) — Installation, tutorials, and 10 worked use cases
+- [Quick Start Explained](QUICKSTART_EXPLAINED.md) — Detailed walkthrough of the Quick Start example
+- [Test Report](TEST_REPORT.md) — Results from running all 148 Python examples and tests
+- [Online Manual](https://meep.readthedocs.io/en/latest) — Full reference documentation
+
 ---
 
 *This guide was written for the Meep codebase as of early 2026. For the most up-to-date information, consult the official documentation at https://meep.readthedocs.io and the source code itself, particularly `CLAUDE.md` in the repository root.*

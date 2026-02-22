@@ -2627,6 +2627,26 @@ Key sections to read next:
 - **Exploiting Symmetry**: How to use symmetry correctly
 - **Parallel Meep**: How to set up MPI runs effectively
 
+### 148 Physics Tutorials
+
+Every Python example and test in this repository has a dedicated tutorial in
+[guides/tutorials/](tutorials/00_index.md) covering the physics theory (with
+equations), a code walkthrough, and key takeaways. The tutorials are organized
+into 12 thematic chapters:
+
+1. [Waveguides and Circuits](tutorials/01_waveguides_and_circuits.md) (18 tutorials)
+2. [Resonators and Cavities](tutorials/02_resonators_and_cavities.md) (16 tutorials)
+3. [Scattering and Radiation](tutorials/03_scattering_and_radiation.md) (18 tutorials)
+4. [Photonic Crystals and MPB](tutorials/04_photonic_crystals_and_mpb.md) (15 tutorials)
+5. [Gratings and Diffractive Optics](tutorials/05_gratings_and_diffractive.md) (13 tutorials)
+6. [Materials and Dispersion](tutorials/06_materials_and_dispersion.md) (17 tutorials)
+7. [Nonlinear Optics and Multi-Level Atoms](tutorials/07_nonlinear_and_multilevel.md) (8 tutorials)
+8. [Adjoint Optimization and Inverse Design](tutorials/08_adjoint_and_optimization.md) (8 tutorials)
+9. [Sources, Monitors, and Field Analysis](tutorials/09_sources_and_monitors.md) (14 tutorials)
+10. [Boundaries, Symmetry, and Coordinates](tutorials/10_boundaries_and_symmetry.md) (10 tutorials)
+11. [Geometry and Material Grids](tutorials/11_geometry_and_materials_lib.md) (6 tutorials)
+12. [Simulation Infrastructure](tutorials/12_simulation_infrastructure.md) (8 tutorials)
+
 ### Examples in This Repository
 
 The `python/examples/` directory in this repository contains many complete,

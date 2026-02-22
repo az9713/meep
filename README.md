@@ -1,6 +1,6 @@
 ![](doc/docs/images/Meep-banner.png)
 
-> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork adds comprehensive documentation: an [Architecture Guide](guides/ARCHITECTURE.md), a [Developer Guide](guides/DEVELOPER_GUIDE.md), a [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions, and a [Test Report](guides/TEST_REPORT.md) from running all 148 Python examples and tests. All original source code remains unchanged.
+> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork adds comprehensive documentation: [148 Physics Tutorials](guides/tutorials/00_index.md) with theory and code walkthroughs for every Python example and test, an [Architecture Guide](guides/ARCHITECTURE.md), a [Developer Guide](guides/DEVELOPER_GUIDE.md), a [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions, a [Quick Start Explained](guides/QUICKSTART_EXPLAINED.md) walkthrough, and a [Test Report](guides/TEST_REPORT.md) from running all 148 Python examples and tests. All original source code remains unchanged.
 
 [![CI](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml)
 [![Sanitizers](https://github.com/NanoComp/meep/actions/workflows/build-san.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-san.yml)
@@ -168,12 +168,13 @@ Full instructions including dependency installation, configure options, and CI b
 ## Project Structure
 
 ```
-src/         - C++ core FDTD engine (libmeep)
-python/      - Python interface and SWIG bindings
-scheme/      - Scheme/Guile interface
-tests/       - C++ test suite
-libpympb/    - Python MPB eigenmode solver bindings
-guides/      - Project guides (architecture, developer, user, test report)
+src/              - C++ core FDTD engine (libmeep)
+python/           - Python interface and SWIG bindings
+scheme/           - Scheme/Guile interface
+tests/            - C++ test suite
+libpympb/         - Python MPB eigenmode solver bindings
+guides/           - Project guides (architecture, developer, user, test report)
+guides/tutorials/ - 148 physics tutorials (theory + code walkthroughs)
 ```
 
 ## Citing Meep
