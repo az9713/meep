@@ -31,6 +31,29 @@
 -   [Adjoint solver](https://meep.readthedocs.io/en/latest/Python_Tutorials/Adjoint_Solver) for **inverse design** and **topology optimization**.
 -   [Visualization routines](https://meep.readthedocs.io/en/latest/Python_User_Interface/#data-visualization) for the simulation domain involving geometries, fields, boundary layers, sources, and monitors.
 
+## Spherical Cow Cloak: Transformation-Optics Invisibility Simulation
+
+This fork includes a Pendry-style electromagnetic invisibility cloak simulation around a spherical scatterer (the classic "spherical cow"). Two complementary implementations demonstrate the physics and FDTD limitations of transformation-optics cloaking:
+
+| File | Approach | Key Result |
+|------|----------|------------|
+| [`spherical_cow_cloak_2d.py`](python/examples/spherical_cow_cloak_2d.py) | 2D cylindrical FDTD | Stable cloaking with full eps+mu tensors in 2D |
+| [`spherical_cow_cloak.py`](python/examples/spherical_cow_cloak.py) | 3D spherical FDTD | Demonstrates Yee grid stability limits for anisotropic cloaks |
+| [`spherical_cow_cloak_viz.py`](python/examples/spherical_cow_cloak_viz.py) | Visualization suite | 2D field maps, spectra, 3D plotly, GIF animation |
+
+The 3D simulation validates bare-sphere scattering against Mie theory (<1% error) but reveals that Meep's Yee grid becomes unconditionally unstable when off-diagonal permittivity components exceed ~1.3x the diagonal -- requiring heavy regularization (eps_min >= 0.55) that destroys the cloaking effect. See the [Cloak Simulation Report](guides/CLOAK_SIMULATION_REPORT.md) for the full technical analysis, systematic stability measurements, and recommendations for alternative approaches (2D FDTD, FEM).
+
+```bash
+# Quick run (3D, ~12 seconds)
+python python/examples/spherical_cow_cloak.py --quick --cow-material dielectric
+
+# 2D simulation
+python python/examples/spherical_cow_cloak_2d.py
+
+# Visualization
+python python/examples/spherical_cow_cloak_viz.py
+```
+
 ## Quick Start
 
 ### Installation via Conda
@@ -138,6 +161,7 @@ sudo apt install h5utils     # fixes 2 more
 | [guides/DEVELOPER_GUIDE.md](guides/DEVELOPER_GUIDE.md) | Developer Guide: building from source, testing, and contributing |
 | [guides/ARCHITECTURE.md](guides/ARCHITECTURE.md) | Architecture Documentation: system design, diagrams, and code reference |
 | [guides/TEST_REPORT.md](guides/TEST_REPORT.md) | Test Report: results from running all 148 Python examples and tests |
+| [guides/CLOAK_SIMULATION_REPORT.md](guides/CLOAK_SIMULATION_REPORT.md) | Cloak Report: FDTD limitations, Yee grid stability analysis, and mitigation strategies |
 | [CLAUDE.md](CLAUDE.md) | AI Assistant Guide: instructions for Claude Code |
 | [Online Manual](https://meep.readthedocs.io/en/latest) | Full documentation on Read the Docs |
 
