@@ -705,6 +705,33 @@ If you need to work on these features, make sure MPB is built and installed corr
 
 The test `test_material_dispersion.py` is explicitly excluded from MPI builds. This is a known limitation: testing material dispersion with MPI requires synchronizing random number generators across processes in a way that this test does not currently handle. The exclusion is automatic: when Meep is configured with `--with-mpi`, the `MDPYTEST` variable in `python/Makefile.am` is set to empty, so this test is simply not included in the test list.
 
+### 4.8 Known Test Failures and Environment Setup
+
+We ran all 148 Python files (`python/examples/` and `python/tests/`) against pymeep 1.31.0 on Python 3.13 with NumPy 2.x. The full report is in `guides/TEST_REPORT.md`. Here is what you need to know as a developer:
+
+**Install these packages before running the full test suite:**
+
+```bash
+pip install parameterized    # required by 10 tests (not in conda-forge pymeep)
+sudo apt install h5utils     # provides h5topng, used by 2 examples
+```
+
+**NumPy 2.x compatibility**: Two examples use NumPy APIs removed in 2.0:
+- `python/examples/antenna-radiation.py`: `np.trapz` → `np.trapezoid`
+- `python/examples/solve-cw.py`: `np.complex_` → `np.complex128`
+
+**Outdated example API calls** (need upstream patches):
+- `python/examples/cavity_arrayslice.py`: `get_array()` positional argument conflicts with keyword `component`
+- `python/examples/mpb_line_defect.py`: uses `fix_efield_phase` (renamed to `fix_field_phase`)
+- `python/examples/waveguide_crossing.py` and `binary_grating_levelset.py`: `EigenModeSource` amplitude receives an array instead of a scalar
+
+**Scripts that require CLI arguments** (not bugs):
+- `dipole_in_vacuum_1D.py {x,y}`
+- `dipole_in_vacuum_cyl_off_axis.py {x,y} dipole_pos_r`
+- `dipole_in_vacuum_cyl_on_axis.py {x,z}`
+
+**Optional packages**: `ring_gds.py` needs `gdspy`, `test_adjoint_jax.py` needs `jax`.
+
 ---
 
 ## 5. Understanding the Codebase

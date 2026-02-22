@@ -121,6 +121,17 @@ GitHub Actions (`.github/workflows/build-ci.yml`): Tests Python 3.9 and 3.11, wi
 - Shared library versioning tracked via `SHARED_VERSION_INFO` in `configure.ac` (currently `36:0:1`). Any `.hpp` change generally breaks binary compatibility.
 - The `step_generic_stride1.cpp` file is auto-generated from `step_generic.cpp` via sed transforms — do not edit directly.
 
+## Known Issues (pymeep 1.31.0 + Python 3.13 + NumPy 2.x)
+
+Full details in `guides/TEST_REPORT.md`. Summary of issues to be aware of when running examples/tests:
+
+- **10 tests need `parameterized`**: `pip install parameterized` (not included in conda-forge pymeep). Affects: `test_adjoint_cyl`, `test_adjoint_utils`, `test_binary_grating`, `test_binary_partition_utils`, `test_chunk_balancer`, `test_get_epsilon_grid`, `test_mode_decomposition`, `test_pml_cyl`, `test_refl_angular`, `test_special_kz`.
+- **NumPy 2.x breaking changes**: `np.trapz` removed (use `np.trapezoid`), `np.complex_` removed (use `np.complex128`). Affects `antenna-radiation.py` and `solve-cw.py`.
+- **`h5topng` not installed by default**: `sudo apt install h5utils`. Affects `cherenkov-radiation.py` and `wvg-src.py`.
+- **Outdated API calls in examples**: `cavity_arrayslice.py` (get_array signature changed), `mpb_line_defect.py` (`fix_efield_phase` → `fix_field_phase`), `waveguide_crossing.py` and `binary_grating_levelset.py` (EigenModeSource amplitude type mismatch).
+- **Optional packages**: `ring_gds.py` needs `gdspy`, `test_adjoint_jax.py` needs `jax`.
+- **CLI-argument scripts**: `dipole_in_vacuum_1D.py`, `dipole_in_vacuum_cyl_off_axis.py`, `dipole_in_vacuum_cyl_on_axis.py` require command-line arguments.
+
 ## Documentation
 
 - `guides/ARCHITECTURE.md` — System architecture with ASCII diagrams, data flows, and code references

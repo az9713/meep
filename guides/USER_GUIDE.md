@@ -2591,6 +2591,25 @@ away from material interfaces where the field interpolation may be inaccurate.
 - You are not using the MPI version of Meep. Install with:
   `conda create -n mpimpi -c conda-forge pymeep=*=mpi_mpich*`
 
+**`ModuleNotFoundError: No module named 'parameterized'`**
+- Some tests require the `parameterized` package which is not included in
+  the conda-forge pymeep installation. Fix: `pip install parameterized`.
+  This affects 10 test files. See `guides/TEST_REPORT.md` for the full list.
+
+**`AttributeError: module 'numpy' has no attribute 'trapz'`**
+- NumPy 2.0 renamed `np.trapz` to `np.trapezoid`. If you see this in
+  `antenna-radiation.py`, replace `np.trapz(...)` with `np.trapezoid(...)`.
+
+**`AttributeError: np.complex_ was removed in the NumPy 2.0 release`**
+- NumPy 2.0 removed `np.complex_`. Replace with `np.complex128`.
+  This affects `solve-cw.py`.
+
+**`FileNotFoundError: No such file or directory: 'h5topng'`**
+- The `h5topng` utility converts HDF5 field output to PNG images.
+  Install it with: `sudo apt install h5utils` (Ubuntu/Debian) or
+  `brew install h5utils` (macOS). Affects `cherenkov-radiation.py`
+  and `wvg-src.py`.
+
 ---
 
 ## 8. Where to Go Next
@@ -2623,6 +2642,12 @@ runnable simulation scripts covering advanced topics:
 - `mode-decomposition.py` — Decomposing fields into waveguide modes
 - `gaussian-beam.py` — Focused Gaussian beam simulation
 - `multilevel-atom.py` — Laser gain simulation (advanced)
+
+> **Note:** Some examples have known issues with NumPy 2.x or require
+> additional packages. Before running examples, install the recommended
+> extras: `pip install parameterized` and `sudo apt install h5utils`.
+> See [guides/TEST_REPORT.md](TEST_REPORT.md) for a complete pass/fail
+> table and per-file notes.
 
 ### The Adjoint Solver for Inverse Design
 
@@ -2663,6 +2688,7 @@ If you want to understand the numerical method more deeply:
 ---
 
 *This guide was written for Meep users who want to run simulations, not develop
-the software. For build instructions, C++ API documentation, and developer
-information, see `CLAUDE.md` and the official developer documentation at
+the software. For build instructions and developer information, see
+`guides/DEVELOPER_GUIDE.md`. For test results and known issues, see
+`guides/TEST_REPORT.md`. For the full API reference, see
 https://meep.readthedocs.io.*

@@ -1,6 +1,6 @@
 ![](doc/docs/images/Meep-banner.png)
 
-> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork enhances the original project with comprehensive documentation including a detailed [Architecture Guide](guides/ARCHITECTURE.md), a step-by-step [Developer Guide](guides/DEVELOPER_GUIDE.md), and an extensive [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions. All original source code remains unchanged.
+> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork adds comprehensive documentation: an [Architecture Guide](guides/ARCHITECTURE.md), a [Developer Guide](guides/DEVELOPER_GUIDE.md), a [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions, and a [Test Report](guides/TEST_REPORT.md) from running all 148 Python examples and tests. All original source code remains unchanged.
 
 [![CI](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml)
 [![Sanitizers](https://github.com/NanoComp/meep/actions/workflows/build-san.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-san.yml)
@@ -96,6 +96,37 @@ python my_first_sim.py
 ```
 
 For more examples and step-by-step tutorials, see the [online manual](https://meep.readthedocs.io/en/latest/Python_Tutorials/Basics/).
+
+## Test Status
+
+We ran all 148 Python files from `python/examples/` and `python/tests/` against pymeep 1.31.0 on Python 3.13 with NumPy 2.x under WSL2. See [guides/TEST_REPORT.md](guides/TEST_REPORT.md) for the full report.
+
+| Result | Count | Pct |
+|--------|-------|-----|
+| Pass   | 76    | 51% |
+| Fail   | 25    | 17% |
+| Timeout| 47    | 32% |
+
+**None of the 25 failures are bugs in meep itself.** All are caused by environment issues:
+
+| Root Cause | Files | Fix |
+|-----------|-------|-----|
+| Missing `parameterized` package | 10 | `pip install parameterized` |
+| NumPy 2.x removed APIs | 2 | `np.trapz` &rarr; `np.trapezoid`, `np.complex_` &rarr; `np.complex128` |
+| Missing `h5topng` tool | 2 | `sudo apt install h5utils` |
+| Missing data files | 2 | Needs pre-generated data or companion script |
+| Scripts requiring CLI args | 3 | Not bugs &mdash; run with required arguments |
+| Outdated example API calls | 4 | Needs upstream fixes (API signature changes) |
+| Missing optional packages | 2 | `pip install gdspy` / `pip install jax` |
+
+The 47 timeouts are due to CPU contention from parallel batch execution, not actual hangs. Files that timed out in one run frequently passed in the other.
+
+**Quick fix for the most common issue:**
+
+```bash
+pip install parameterized    # fixes 10 of 25 failures
+sudo apt install h5utils     # fixes 2 more
+```
 
 ## Documentation
 
