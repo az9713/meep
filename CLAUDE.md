@@ -134,6 +134,9 @@ Full details in `guides/TEST_REPORT.md`. Summary of issues to be aware of when r
 
 ## Documentation
 
+- `guides/tutorials/` — **148 Physics Tutorials** covering every Python example and test (theory + code walkthrough)
+  - `guides/tutorials/00_index.md` — Master index with file lookup table and difficulty/topic guides
+  - 12 chapter files organized by topic: waveguides, resonators, scattering, photonic crystals, gratings, materials, nonlinear, adjoint optimization, sources/monitors, boundaries, geometry, infrastructure
 - `guides/ARCHITECTURE.md` — System architecture with ASCII diagrams, data flows, and code references
 - `guides/DEVELOPER_GUIDE.md` — Step-by-step build, test, and contribution guide for new developers
 - `guides/USER_GUIDE.md` — Installation (including Windows), tutorials, and 10 educational use cases

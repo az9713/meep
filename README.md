@@ -132,6 +132,7 @@ sudo apt install h5utils     # fixes 2 more
 
 | Resource | Description |
 |---|---|
+| [guides/tutorials/](guides/tutorials/00_index.md) | **148 Physics Tutorials**: deep-dive theory + code walkthroughs for every Python example and test |
 | [guides/QUICKSTART_EXPLAINED.md](guides/QUICKSTART_EXPLAINED.md) | Quick Start Explained: physics, simulation setup, and results walkthrough |
 | [guides/USER_GUIDE.md](guides/USER_GUIDE.md) | User Guide: installation, tutorials, and 10 worked use cases |
 | [guides/DEVELOPER_GUIDE.md](guides/DEVELOPER_GUIDE.md) | Developer Guide: building from source, testing, and contributing |
