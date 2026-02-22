@@ -113,9 +113,9 @@ For more examples and step-by-step tutorials, see the [online manual](https://me
 |---|---|---|
 | Linux | Full | Install via Conda or build from source |
 | macOS | Full | Install via Conda or build from source |
-| Windows | Supported | Via Conda, WSL2, or Docker — see [USER_GUIDE.md](docs/USER_GUIDE.md) for details |
+| Windows | Via WSL2 or Docker | No native Conda package — see [USER_GUIDE.md](docs/USER_GUIDE.md) for setup instructions |
 
-Conda packages are the recommended path for new users on all platforms. Building from source gives the most flexibility for advanced configurations (MPI, custom prefix, debug builds).
+Conda packages are the recommended path for new users on Linux and macOS. Windows users should use WSL2 (Ubuntu) or Docker. Building from source gives the most flexibility for advanced configurations (MPI, custom prefix, debug builds).
 
 ## Building from Source
 
