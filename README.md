@@ -35,18 +35,18 @@
 
 ### Installation via Conda
 
-The fastest way to get started on Linux or macOS is through the `conda-forge` channel:
+The fastest way to get started on Linux or macOS is through the `conda-forge` channel (Windows users: install via [WSL2](docs/USER_GUIDE.md)):
 
 ```bash
 conda create -n mp -c conda-forge pymeep
 conda activate mp
 ```
 
-For MPI-parallel support, install the `pymeep-parallel` package instead:
+For MPI-parallel support, install the MPICH variant instead:
 
 ```bash
-conda create -n mp -c conda-forge pymeep-parallel
-conda activate mp
+conda create -n pmp -c conda-forge pymeep=*=mpi_mpich_*
+conda activate pmp
 ```
 
 ### A Minimal 2D Waveguide Simulation
