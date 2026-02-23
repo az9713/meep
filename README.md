@@ -1,6 +1,6 @@
 ![](doc/docs/images/Meep-banner.png)
 
-> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork adds an **original [Spherical Cow Cloak](#spherical-cow-cloak-transformation-optics-invisibility-simulation) study** (Pendry-style transformation-optics invisibility cloak with full FDTD stability analysis), plus comprehensive documentation: [148 Physics Tutorials](guides/tutorials/00_index.md) with theory and code walkthroughs for every Python example and test, an [Architecture Guide](guides/ARCHITECTURE.md), a [Developer Guide](guides/DEVELOPER_GUIDE.md), a [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions, a [Quick Start Explained](guides/QUICKSTART_EXPLAINED.md) walkthrough, and a [Test Report](guides/TEST_REPORT.md) from running all 148 Python examples and tests. All original source code remains unchanged.
+> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork adds an **original [Spherical Cow Cloak](#spherical-cow-cloak-transformation-optics-invisibility-simulation) study** (Pendry-style transformation-optics invisibility cloak with full FDTD stability analysis), plus comprehensive documentation including a [Four-Approach Cloaking Comparison](guides/CLOAK_COMPARISON_GUIDE.md): [148 Physics Tutorials](guides/tutorials/00_index.md) with theory and code walkthroughs for every Python example and test, an [Architecture Guide](guides/ARCHITECTURE.md), a [Developer Guide](guides/DEVELOPER_GUIDE.md), a [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions, a [Quick Start Explained](guides/QUICKSTART_EXPLAINED.md) walkthrough, and a [Test Report](guides/TEST_REPORT.md) from running all 148 Python examples and tests. All original source code remains unchanged.
 
 [![CI](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml)
 [![Sanitizers](https://github.com/NanoComp/meep/actions/workflows/build-san.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-san.yml)
@@ -54,6 +54,7 @@
 | [`spherical_cow_cloak.py`](python/examples/spherical_cow_cloak.py) | 3D reduced-parameter cloak | Mie-validated scattering; documents Yee grid stability limits |
 | [`spherical_cow_cloak_2d.py`](python/examples/spherical_cow_cloak_2d.py) | 2D full Pendry cloak (eps+mu) | Stable cloaking with anisotropic tensors in 2D |
 | [`spherical_cow_cloak_viz.py`](python/examples/spherical_cow_cloak_viz.py) | Visualization suite | Field maps, scattering spectra, 3D plotly, GIF animation |
+| [`spherical_cow_cloak_comparison.py`](python/examples/spherical_cow_cloak_comparison.py) | Four-approach comparison (3D cancellation, 2D Pendry, multi-shell, carpet) | Successfully cloaks a true 3D sphere; head-to-head comparison of all methods |
 
 ### Documentation
 
@@ -61,6 +62,7 @@
 |-------|-------------------|
 | [Cloak Simulation Report](guides/CLOAK_SIMULATION_REPORT.md) | Full technical analysis: Yee grid stability measurements, Courant number experiments, regularization trade-offs, and 5 mitigation strategies |
 | [Visualization Guide](guides/CLOAK_VISUALIZATION_GUIDE.md) | How to read the field plots and scattering spectra, relate them to the physics, and judge whether results make sense |
+| [Cloaking Comparison Guide](guides/CLOAK_COMPARISON_GUIDE.md) | Physics behind all four cloaking approaches, how to read comparison plots, and which method to use when |
 
 ### Quick start
 
@@ -73,6 +75,9 @@ python python/examples/spherical_cow_cloak_2d.py
 
 # Generate all visualizations from saved data
 python python/examples/spherical_cow_cloak_viz.py
+
+# Four-approach comparison (3D + 2D, ~5-8 min)
+python python/examples/spherical_cow_cloak_comparison.py --method all --quick
 ```
 
 ## Quick Start

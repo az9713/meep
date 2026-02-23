@@ -144,4 +144,5 @@ Full details in `guides/TEST_REPORT.md`. Summary of issues to be aware of when r
 - `guides/TEST_REPORT.md` — Results from running all 148 Python examples and tests
 - `guides/CLOAK_SIMULATION_REPORT.md` — Spherical cow cloak: FDTD limitations, Yee grid stability analysis, and mitigation strategies
 - `guides/CLOAK_VISUALIZATION_GUIDE.md` — How to read cloak field plots and scattering spectra, with physics interpretation and sanity checks
+- `guides/CLOAK_COMPARISON_GUIDE.md` -- Comprehensive four-approach cloaking guide: physics, implementation deep-dive, plot interpretation, debugging history, parameter realism, and result quality assessment
 - [Online Manual](https://meep.readthedocs.io/en/latest) — Full reference documentation
