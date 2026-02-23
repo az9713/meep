@@ -1,6 +1,6 @@
 ![](doc/docs/images/Meep-banner.png)
 
-> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork adds comprehensive documentation: [148 Physics Tutorials](guides/tutorials/00_index.md) with theory and code walkthroughs for every Python example and test, an [Architecture Guide](guides/ARCHITECTURE.md), a [Developer Guide](guides/DEVELOPER_GUIDE.md), a [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions, a [Quick Start Explained](guides/QUICKSTART_EXPLAINED.md) walkthrough, and a [Test Report](guides/TEST_REPORT.md) from running all 148 Python examples and tests. All original source code remains unchanged.
+> **Note:** This is a fork of the original [NanoComp/meep](https://github.com/NanoComp/meep) repository. This fork adds an **original [Spherical Cow Cloak](#spherical-cow-cloak-transformation-optics-invisibility-simulation) study** (Pendry-style transformation-optics invisibility cloak with full FDTD stability analysis), plus comprehensive documentation: [148 Physics Tutorials](guides/tutorials/00_index.md) with theory and code walkthroughs for every Python example and test, an [Architecture Guide](guides/ARCHITECTURE.md), a [Developer Guide](guides/DEVELOPER_GUIDE.md), a [User Guide](guides/USER_GUIDE.md) with 10 educational use cases and Windows installation instructions, a [Quick Start Explained](guides/QUICKSTART_EXPLAINED.md) walkthrough, and a [Test Report](guides/TEST_REPORT.md) from running all 148 Python examples and tests. All original source code remains unchanged.
 
 [![CI](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-ci.yml)
 [![Sanitizers](https://github.com/NanoComp/meep/actions/workflows/build-san.yml/badge.svg)](https://github.com/NanoComp/meep/actions/workflows/build-san.yml)
@@ -33,24 +33,45 @@
 
 ## Spherical Cow Cloak: Transformation-Optics Invisibility Simulation
 
-This fork includes a Pendry-style electromagnetic invisibility cloak simulation around a spherical scatterer (the classic "spherical cow"). Two complementary implementations demonstrate the physics and FDTD limitations of transformation-optics cloaking:
+> **Featured study** -- Can you cloak a spherical cow? This fork investigates Pendry's transformation-optics invisibility cloak using Meep's FDTD engine, pushing it to its stability limits and documenting exactly where and why it breaks.
+
+![Cloak field comparison: empty reference, bare sphere, and cloaked sphere showing Ez field patterns](python/examples/cloak_fields_dielectric.png)
+
+*Ez field cross-sections comparing an empty reference (undisturbed plane wave), a bare dielectric sphere (strong scattering shadow), and a cloaked sphere. The cloak bends wavefronts around the object, but heavy regularization required for Yee-grid stability limits the cloaking effectiveness. See the [Visualization Guide](guides/CLOAK_VISUALIZATION_GUIDE.md) for a detailed walkthrough of how to read these plots.*
+
+### What this study covers
+
+- **Transformation optics implementation** -- Full Pendry cloak with anisotropic, inhomogeneous epsilon/mu tensors derived from the coordinate mapping r' = R1 + r(R2-R1)/R2, converted from cylindrical to Cartesian coordinates at every grid point
+- **Mie theory validation** -- Bare-sphere scattering cross-section matches analytical Mie series to <1% error, confirming the simulation methodology is correct
+- **Yee grid stability analysis** -- Systematic measurement of the FDTD stability boundary: off-diagonal permittivity components exceeding ~1.3x the diagonal cause unconditional instability that *cannot* be fixed by reducing the Courant number
+- **Regularization trade-off** -- The minimum stable regularization (eps_min >= 0.55) flattens the gradient-index profile that the cloak relies on, destroying the cloaking effect. This is a fundamental FDTD limitation, not a bug.
+- **Alternative approaches** -- The 2D cylindrical implementation achieves stable cloaking with full eps+mu tensors, demonstrating that the physics works when the numerics cooperate
+
+### Implementations
 
 | File | Approach | Key Result |
 |------|----------|------------|
-| [`spherical_cow_cloak_2d.py`](python/examples/spherical_cow_cloak_2d.py) | 2D cylindrical FDTD | Stable cloaking with full eps+mu tensors in 2D |
-| [`spherical_cow_cloak.py`](python/examples/spherical_cow_cloak.py) | 3D spherical FDTD | Demonstrates Yee grid stability limits for anisotropic cloaks |
-| [`spherical_cow_cloak_viz.py`](python/examples/spherical_cow_cloak_viz.py) | Visualization suite | 2D field maps, spectra, 3D plotly, GIF animation |
+| [`spherical_cow_cloak.py`](python/examples/spherical_cow_cloak.py) | 3D reduced-parameter cloak | Mie-validated scattering; documents Yee grid stability limits |
+| [`spherical_cow_cloak_2d.py`](python/examples/spherical_cow_cloak_2d.py) | 2D full Pendry cloak (eps+mu) | Stable cloaking with anisotropic tensors in 2D |
+| [`spherical_cow_cloak_viz.py`](python/examples/spherical_cow_cloak_viz.py) | Visualization suite | Field maps, scattering spectra, 3D plotly, GIF animation |
 
-The 3D simulation validates bare-sphere scattering against Mie theory (<1% error) but reveals that Meep's Yee grid becomes unconditionally unstable when off-diagonal permittivity components exceed ~1.3x the diagonal -- requiring heavy regularization (eps_min >= 0.55) that destroys the cloaking effect. See the [Cloak Simulation Report](guides/CLOAK_SIMULATION_REPORT.md) for the full technical analysis, systematic stability measurements, and recommendations for alternative approaches (2D FDTD, FEM).
+### Documentation
+
+| Guide | What you'll learn |
+|-------|-------------------|
+| [Cloak Simulation Report](guides/CLOAK_SIMULATION_REPORT.md) | Full technical analysis: Yee grid stability measurements, Courant number experiments, regularization trade-offs, and 5 mitigation strategies |
+| [Visualization Guide](guides/CLOAK_VISUALIZATION_GUIDE.md) | How to read the field plots and scattering spectra, relate them to the physics, and judge whether results make sense |
+
+### Quick start
 
 ```bash
 # Quick run (3D, ~12 seconds)
 python python/examples/spherical_cow_cloak.py --quick --cow-material dielectric
 
-# 2D simulation
+# 2D simulation (full Pendry cloak)
 python python/examples/spherical_cow_cloak_2d.py
 
-# Visualization
+# Generate all visualizations from saved data
 python python/examples/spherical_cow_cloak_viz.py
 ```
 
