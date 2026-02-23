@@ -162,6 +162,7 @@ sudo apt install h5utils     # fixes 2 more
 | [guides/ARCHITECTURE.md](guides/ARCHITECTURE.md) | Architecture Documentation: system design, diagrams, and code reference |
 | [guides/TEST_REPORT.md](guides/TEST_REPORT.md) | Test Report: results from running all 148 Python examples and tests |
 | [guides/CLOAK_SIMULATION_REPORT.md](guides/CLOAK_SIMULATION_REPORT.md) | Cloak Report: FDTD limitations, Yee grid stability analysis, and mitigation strategies |
+| [guides/CLOAK_VISUALIZATION_GUIDE.md](guides/CLOAK_VISUALIZATION_GUIDE.md) | Visualization Guide: how to read field plots and scattering spectra with physics interpretation |
 | [CLAUDE.md](CLAUDE.md) | AI Assistant Guide: instructions for Claude Code |
 | [Online Manual](https://meep.readthedocs.io/en/latest) | Full documentation on Read the Docs |
 
